@@ -45,7 +45,7 @@ var searchData=
   ['next_5findex_42',['next_index',['../classDataSpy.html#ad15d4da1116c1fc3d79180f2b54ffe09',1,'DataSpy']]],
   ['nhit_43',['nhit',['../classISSArrayEvt.html#a1e0f6eee73bd99f6dc2a22163684c8a9',1,'ISSArrayEvt']]],
   ['nhit_5flist_44',['nhit_list',['../classISSEventBuilder.html#a9e422ec4255dd04102179c12895fa300',1,'ISSEventBuilder']]],
-  ['nid_45',['nid',['../classISSArrayEvt.html#a7426bb91a190c42e6bed591ad384c4a8',1,'ISSArrayEvt']]],
+  ['nid_45',['nid',['../classISSArrayEvt.html#a7426bb91a190c42e6bed591ad384c4a8',1,'ISSArrayEvt::nid'],['../classISSRxEvent.html#a07e08281121ace72ccf810f572446c4d',1,'ISSRxEvent::nid']]],
   ['nid_5flist_46',['nid_list',['../classISSEventBuilder.html#afeba524844b5d34f9f67e6b602d07832',1,'ISSEventBuilder']]],
   ['nmod_5flist_47',['nmod_list',['../classISSEventBuilder.html#a71f9d2bf3f2c10f382eb8618469daefe',1,'ISSEventBuilder']]],
   ['nn_5ftd_48',['nn_td',['../classISSEventBuilder.html#a51c44a3af824f29f58fe61f2054552e8',1,'ISSEventBuilder']]],

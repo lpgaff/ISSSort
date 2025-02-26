@@ -52,7 +52,7 @@ var searchData=
   ['rfsim_49',['rfsim',['../classISSReaction.html#ad10963ba32970b7ff3c303bdd0c7d642',1,'ISSReaction']]],
   ['rid_5flist_50',['rid_list',['../classISSEventBuilder.html#a5e16e7234b96b8a8f0ad87db9357a48a',1,'ISSEventBuilder']]],
   ['root_51',['root',['../Reaction_8cc.html#adec064332fb7f7c5788d798dafbd9c7d',1,'Reaction.cc']]],
-  ['row_52',['row',['../classISSArrayEvt.html#abbaf6332446f1ea1ddec8cfc975d57c2',1,'ISSArrayEvt']]],
+  ['row_52',['row',['../classISSArrayEvt.html#abbaf6332446f1ea1ddec8cfc975d57c2',1,'ISSArrayEvt::row'],['../classISSRxEvent.html#a247fb210ec58035945eca23051ff2dcc',1,'ISSRxEvent::row']]],
   ['rsec_5flist_53',['rsec_list',['../classISSEventBuilder.html#af291ddf99525c8a1fccac09213588b04',1,'ISSEventBuilder']]],
   ['rtd_5flist_54',['rtd_list',['../classISSEventBuilder.html#ad68e3874be12b536c146d305f1a670bc',1,'ISSEventBuilder']]],
   ['run_5flist_5fbox_55',['run_list_box',['../classISSGUI.html#a87a1152abd52f32ab030e9206cdf9471',1,'ISSGUI']]],

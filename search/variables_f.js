@@ -12,7 +12,7 @@ var searchData=
   ['phi_5fmeas_9',['phi_meas',['../classISSReaction.html#ac027b99074dbd0dc7024c5717353bcbf',1,'ISSReaction::phi_meas'],['../classISSRxEvent.html#a42c194a9ac7aa4cbe8095fd01bac607e',1,'ISSRxEvent::phi_meas']]],
   ['phit_10',['phit',['../classISSArrayEvt.html#ae93db12868fe4b46b61f9241a9cc7807',1,'ISSArrayEvt']]],
   ['phit_5flist_11',['phit_list',['../classISSEventBuilder.html#acff61f88d9897497655f02deeed34ac7',1,'ISSEventBuilder']]],
-  ['pid_12',['pid',['../classISSArrayEvt.html#aaefab19ab3b2c092661a3a65825ed612',1,'ISSArrayEvt']]],
+  ['pid_12',['pid',['../classISSArrayEvt.html#aaefab19ab3b2c092661a3a65825ed612',1,'ISSArrayEvt::pid'],['../classISSRxEvent.html#acbbc71960a7f00551f11dc208c9ff750',1,'ISSRxEvent::pid']]],
   ['pid_5flist_13',['pid_list',['../classISSEventBuilder.html#a36254e4c38c5ca509b17b34120c7dfa1',1,'ISSEventBuilder']]],
   ['pmod_5flist_14',['pmod_list',['../classISSEventBuilder.html#a7e07f87ac2bfd6feae5b965c92c0f30d',1,'ISSEventBuilder']]],
   ['pn_5f11_15',['pn_11',['../classISSEventBuilder.html#a59ee9c1a811609c6bd059e5a0b70a38d',1,'ISSEventBuilder']]],
