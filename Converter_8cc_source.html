@@ -1328,7 +1328,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>    </div>
 <div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>    <span class="comment">// Qlong</span></div>
 <div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classISSConverter.html#a8783743bffe642301b243dab3aa15325">my_data_id</a> == 0 ) {</div>
-<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>        </div>
+<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span> </div>
 <div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>        <span class="comment">// Overflow flag</span></div>
 <div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>        <span class="keywordflow">if</span>( ( <a class="code hl_variable" href="classISSConverter.html#a930e0fdf72ccf8c4cc00f21171fe84b7">my_adc_data</a> &amp; 0xFFFF ) == 0xFFFF )</div>
 <div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span>            <a class="code hl_variable" href="classISSConverter.html#aacf24a3eeb942f4e69f20f7a8281ab48">caen_data</a>-&gt;SetOverflowLong( <span class="keyword">true</span> );</div>
@@ -1341,16 +1341,16 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span> </div>
 <div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>        <span class="comment">// Mark data received</span></div>
 <div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>        <a class="code hl_variable" href="classISSConverter.html#ae18da9f4290de9789d4a87eafd267ddf">flag_caen_data0</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>        </div>
+<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span> </div>
 <div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>    }</div>
 <div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span> </div>
 <div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>    <span class="comment">// Qshort</span></div>
 <div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classISSConverter.html#a8783743bffe642301b243dab3aa15325">my_data_id</a> == 1 ) {</div>
-<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>        </div>
+<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span> </div>
 <div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span>        <span class="comment">// Clipped flag</span></div>
 <div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>        <span class="keywordtype">bool</span> myclipped = (<a class="code hl_variable" href="classISSConverter.html#a930e0fdf72ccf8c4cc00f21171fe84b7">my_adc_data</a> &gt;&gt; 15) &amp; 0x1; <span class="comment">// 1 bit from 15</span></div>
 <div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span>        <a class="code hl_variable" href="classISSConverter.html#aacf24a3eeb942f4e69f20f7a8281ab48">caen_data</a>-&gt;SetClipped( myclipped );</div>
-<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span>        </div>
+<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span> </div>
 <div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>        <span class="comment">// Overflow flag</span></div>
 <div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>        <span class="keywordflow">if</span>( ( <a class="code hl_variable" href="classISSConverter.html#a930e0fdf72ccf8c4cc00f21171fe84b7">my_adc_data</a> &amp; 0x7FFF ) == 0x7FFF )</div>
 <div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>            <a class="code hl_variable" href="classISSConverter.html#aacf24a3eeb942f4e69f20f7a8281ab48">caen_data</a>-&gt;SetOverflowShort( <span class="keyword">true</span> );</div>
@@ -1361,10 +1361,10 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>        <a class="code hl_variable" href="classISSConverter.html#a930e0fdf72ccf8c4cc00f21171fe84b7">my_adc_data</a> = <a class="code hl_variable" href="classISSConverter.html#a930e0fdf72ccf8c4cc00f21171fe84b7">my_adc_data</a> &amp; 0x7FFF; <span class="comment">// 15 bits from 0</span></div>
 <div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span>        <a class="code hl_variable" href="classISSConverter.html#a0701a83586c5b19377ac1d051c5cc62b">hcaen_qshort</a>[<a class="code hl_variable" href="classISSConverter.html#a61d3715fb8b23d7fc0c193db22abd05e">my_mod_id</a>][<a class="code hl_variable" href="classISSConverter.html#a68386e028fb0f79e8ea2cf2b4d19d66e">my_ch_id</a>]-&gt;Fill( <a class="code hl_variable" href="classISSConverter.html#a930e0fdf72ccf8c4cc00f21171fe84b7">my_adc_data</a> );</div>
 <div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>        <a class="code hl_variable" href="classISSConverter.html#aacf24a3eeb942f4e69f20f7a8281ab48">caen_data</a>-&gt;SetQshort( <a class="code hl_variable" href="classISSConverter.html#a930e0fdf72ccf8c4cc00f21171fe84b7">my_adc_data</a> );</div>
-<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>        </div>
+<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span> </div>
 <div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span>        <span class="comment">// Mark data received</span></div>
 <div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>        <a class="code hl_variable" href="classISSConverter.html#a2e0b10c5f0bbe1b4db3273ff3d31be54">flag_caen_data1</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span>        </div>
+<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span> </div>
 <div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span>    }</div>
 <div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span>    </div>
 <div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span>    <span class="comment">// Extra word items</span></div>
