@@ -1311,19 +1311,19 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>    <span class="comment">// is not trace data. So set the flag to be true and finish the</span></div>
 <div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>    <span class="comment">// event with an empty trace.</span></div>
 <div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_variable" href="classISSConverter.html#ae18da9f4290de9789d4a87eafd267ddf">flag_caen_data0</a> &amp;&amp; <a class="code hl_variable" href="classISSConverter.html#a2e0b10c5f0bbe1b4db3273ff3d31be54">flag_caen_data1</a> &amp;&amp; ( <a class="code hl_variable" href="classISSConverter.html#a49699fb930e963f795dd9dee6f9e0558">flag_caen_data2</a> || <a class="code hl_variable" href="classISSConverter.html#adc762c006e8dcd641db60f3d06c5b3f9">flag_caen_data3</a> ) ){</div>
-<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>        </div>
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span> </div>
 <div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>        <span class="comment">// Fake trace flag, but with an empty trace</span></div>
 <div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>        <a class="code hl_variable" href="classISSConverter.html#a282d6d26fb14aeeea68a0e647f34b70d">flag_caen_trace</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>        </div>
+<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span> </div>
 <div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>        <span class="comment">// Finish up the previous event</span></div>
 <div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>        <a class="code hl_function" href="classISSConverter.html#ac88a69762e12efb5a4b2f24199895931">FinishCAENData</a>();</div>
-<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>        </div>
+<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span> </div>
 <div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>        <span class="comment">// Then set the info correctly for this event</span></div>
 <div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>        <a class="code hl_variable" href="classISSConverter.html#aacf24a3eeb942f4e69f20f7a8281ab48">caen_data</a>-&gt;SetTimeStamp( <a class="code hl_variable" href="classISSConverter.html#a2bc7b1d90e2f945e8904ad954eee35bb">my_tm_stp</a> );</div>
 <div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>        <a class="code hl_variable" href="classISSConverter.html#aacf24a3eeb942f4e69f20f7a8281ab48">caen_data</a>-&gt;SetCrate(0); <span class="comment">// CAEN crate is always 0</span></div>
 <div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>        <a class="code hl_variable" href="classISSConverter.html#aacf24a3eeb942f4e69f20f7a8281ab48">caen_data</a>-&gt;SetModule( <a class="code hl_variable" href="classISSConverter.html#a61d3715fb8b23d7fc0c193db22abd05e">my_mod_id</a> );</div>
 <div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>        <a class="code hl_variable" href="classISSConverter.html#aacf24a3eeb942f4e69f20f7a8281ab48">caen_data</a>-&gt;SetChannel( <a class="code hl_variable" href="classISSConverter.html#a68386e028fb0f79e8ea2cf2b4d19d66e">my_ch_id</a> );</div>
-<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>        </div>
+<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span> </div>
 <div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>    }</div>
 <div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>    </div>
 <div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>    <span class="comment">// Qlong</span></div>
