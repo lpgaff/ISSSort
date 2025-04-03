@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['initialise_0',['Initialise',['../classISSCalibration.html#a6b80d6f860dcd8475fff3334b1348ddf',1,'ISSCalibration::Initialise()'],['../classISSEventBuilder.html#a6e5cd4126fb1832fe68ceadea4f074ad',1,'ISSEventBuilder::Initialise()']]],
+  ['initialise_0',['Initialise',['../classISSCalibration.html#a6b80d6f860dcd8475fff3334b1348ddf',1,'ISSCalibration::Initialise()'],['../classISSEventBuilder.html#a6e5cd4126fb1832fe68ceadea4f074ad',1,'ISSEventBuilder::Initialise()'],['../classISSHistogrammer.html#a4afff1a62c1ad2dfadcdaa00fd44bced',1,'ISSHistogrammer::Initialise()']]],
   ['inputfile_1',['InputFile',['../classISSCalibration.html#a3d8c61732dec37e3c7c38eb7b86e61ac',1,'ISSCalibration::InputFile()'],['../classISSReaction.html#a4f667357690073d112416ab926714317',1,'ISSReaction::InputFile()'],['../classISSSettings.html#ab893c6e2e9aebc6dc2399b81674932b3',1,'ISSSettings::InputFile()']]],
   ['isasic_2',['IsAsic',['../classISSDataPackets.html#a294e2498c7f9e3872f4304ebb7d967d0',1,'ISSDataPackets']]],
   ['isasiconly_3',['IsASICOnly',['../classISSSettings.html#a6a5400e89c62e6f357a5d5560d34a7aa',1,'ISSSettings']]],
@@ -34,7 +34,7 @@ var searchData=
   ['issevts_31',['ISSEvts',['../classISSEvts.html#a9cc3eba38a7880381beb2aa940f0e4aa',1,'ISSEvts']]],
   ['issgammarayevt_32',['ISSGammaRayEvt',['../classISSGammaRayEvt.html#a5f8228aa5ebca45dd27c8280da73e000',1,'ISSGammaRayEvt']]],
   ['issgui_33',['ISSGUI',['../classISSGUI.html#a3c5692fdedebb2e00b26567f994a0bf5',1,'ISSGUI']]],
-  ['isshistogrammer_34',['ISSHistogrammer',['../classISSHistogrammer.html#af5a22adbb2a64811c1a7fd043fa1047b',1,'ISSHistogrammer']]],
+  ['isshistogrammer_34',['ISSHistogrammer',['../classISSHistogrammer.html#a31fa9ab3e0038c09ff44a1032ec3cbaa',1,'ISSHistogrammer::ISSHistogrammer()'],['../classISSHistogrammer.html#af5a22adbb2a64811c1a7fd043fa1047b',1,'ISSHistogrammer::ISSHistogrammer(std::shared_ptr&lt; ISSReaction &gt; myreact, std::shared_ptr&lt; ISSSettings &gt; myset)']]],
   ['issinfodata_35',['ISSInfoData',['../classISSInfoData.html#a149fc1e616e6fbcd21c6efb5fabf20d4',1,'ISSInfoData::ISSInfoData()'],['../classISSInfoData.html#ad087f49eed0ab61234fdbc0fb8fbbf15',1,'ISSInfoData::ISSInfoData(unsigned long long t, unsigned char c, unsigned char m)']]],
   ['isslumeevt_36',['ISSLumeEvt',['../classISSLumeEvt.html#a896cddb8bb9632d63e40cfce9a486aa6',1,'ISSLumeEvt']]],
   ['issmesydata_37',['ISSMesyData',['../classISSMesyData.html#ad6611ce3a38540ab836a5c85d97bdc53',1,'ISSMesyData']]],
