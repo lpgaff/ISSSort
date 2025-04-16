@@ -714,7 +714,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="classISSSettings.html#a08dcdfc1a42ecdf3586892ecb50e8fab">lume_type_list</a>.size(); ++j ){</div>
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>            <span class="comment">// Assuming they are all in the same Mesytec module</span></div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> mm = 2;</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> mm = 5;</div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> cc = i * <a class="code hl_variable" href="classISSSettings.html#a08dcdfc1a42ecdf3586892ecb50e8fab">lume_type_list</a>.size() + j;</div>
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span> </div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>            <a class="code hl_variable" href="classISSSettings.html#a0d57360142ecacffcdb46e1d8c79f88b">lume_vme</a>[i][j] = config-&gt;GetValue( Form( <span class="stringliteral">&quot;LUME_%d_%s.Crate&quot;</span>, i, <a class="code hl_variable" href="classISSSettings.html#a08dcdfc1a42ecdf3586892ecb50e8fab">lume_type_list</a>[j].data() ), (int) 1 );</div>
@@ -832,7 +832,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span> </div>
 <div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = 0; k &lt; nstrips; ++k ){</div>
 <div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span> </div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> mm = 2*i;</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> mm = 2*i + j + 2;</div>
 <div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> cc = k;</div>
 <div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>                <span class="keywordflow">if</span>( k &gt; <a class="code hl_function" href="classISSSettings.html#a8215724002b78e80b4fd9fac2a1b2c30">GetMaximumNumberOfVmeChannels</a>() ) {</div>
 <div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>                    mm++;</div>
