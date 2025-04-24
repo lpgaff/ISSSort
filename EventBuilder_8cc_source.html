@@ -3464,7 +3464,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03385" name="l03385"></a><span class="lineno"> 3385</span>        hname = <span class="stringliteral">&quot;cd_pn_en_&quot;</span> + std::to_string(i);</div>
 <div class="line"><a id="l03386" name="l03386"></a><span class="lineno"> 3386</span>        htitle = <span class="stringliteral">&quot;ring vs. sector energy (layer &quot;</span>;</div>
 <div class="line"><a id="l03387" name="l03387"></a><span class="lineno"> 3387</span>        htitle += std::to_string(i) + <span class="stringliteral">&quot;);Energy rings (keV);Energy sectors (keV)&quot;</span>;</div>
-<div class="line"><a id="l03388" name="l03388"></a><span class="lineno"> 3388</span>        <a class="code hl_variable" href="classISSEventBuilder.html#a5c70d6380aa6722cdb399fb4727cd6fc">cd_pn_en</a>[i] = <span class="keyword">new</span> TH2F( hname.data(), htitle.data(), 2e4, 0, 2e5, 2e4, 0, 2e5 );</div>
+<div class="line"><a id="l03388" name="l03388"></a><span class="lineno"> 3388</span>        <a class="code hl_variable" href="classISSEventBuilder.html#a5c70d6380aa6722cdb399fb4727cd6fc">cd_pn_en</a>[i] = <span class="keyword">new</span> TH2F( hname.data(), htitle.data(), 2e3, 0, 2e5, 2e3, 0, 2e5 );</div>
 <div class="line"><a id="l03389" name="l03389"></a><span class="lineno"> 3389</span> </div>
 <div class="line"><a id="l03390" name="l03390"></a><span class="lineno"> 3390</span>        hname = <span class="stringliteral">&quot;cd_pn_td_&quot;</span> + std::to_string(i);</div>
 <div class="line"><a id="l03391" name="l03391"></a><span class="lineno"> 3391</span>        htitle = <span class="stringliteral">&quot;ring vs. sector time difference (layer &quot;</span>;</div>
