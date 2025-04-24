@@ -792,12 +792,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ac6ac7a1b8f3c6c5bc1839570f0fda179" id="r_ac6ac7a1b8f3c6c5bc1839570f0fda179"><td class="memItemLeft" align="right" valign="top">std::vector&lt; TH2F * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6ac7a1b8f3c6c5bc1839570f0fda179">cd_rs_mult</a></td></tr>
 <tr class="memdesc:ac6ac7a1b8f3c6c5bc1839570f0fda179"><td class="mdescLeft">&#160;</td><td class="mdescRight">CD ring-strip multiplicity for each layer.  <br /></td></tr>
 <tr class="separator:ac6ac7a1b8f3c6c5bc1839570f0fda179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c70d6380aa6722cdb399fb4727cd6fc" id="r_a5c70d6380aa6722cdb399fb4727cd6fc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; TH2F * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c70d6380aa6722cdb399fb4727cd6fc">cd_pn_en</a></td></tr>
-<tr class="memdesc:a5c70d6380aa6722cdb399fb4727cd6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">CD ring-strip energy matrix for each layer.  <br /></td></tr>
-<tr class="separator:a5c70d6380aa6722cdb399fb4727cd6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb368978eb10df4dda8558dc3b47594" id="r_a5fb368978eb10df4dda8558dc3b47594"><td class="memItemLeft" align="right" valign="top">std::vector&lt; TH1F * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fb368978eb10df4dda8558dc3b47594">cd_pn_td</a></td></tr>
-<tr class="memdesc:a5fb368978eb10df4dda8558dc3b47594"><td class="mdescLeft">&#160;</td><td class="mdescRight">CD ring-strip time difference for each layer.  <br /></td></tr>
-<tr class="separator:a5fb368978eb10df4dda8558dc3b47594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466ac1f3796e8841aa8bddb926159f2a" id="r_a466ac1f3796e8841aa8bddb926159f2a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; TH2F * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a466ac1f3796e8841aa8bddb926159f2a">cd_rs_en</a></td></tr>
+<tr class="memdesc:a466ac1f3796e8841aa8bddb926159f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">CD ring-strip energy matrix for each layer.  <br /></td></tr>
+<tr class="separator:a466ac1f3796e8841aa8bddb926159f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12cf7c0979b54d59c8127f3525d544e" id="r_af12cf7c0979b54d59c8127f3525d544e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; TH1F * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af12cf7c0979b54d59c8127f3525d544e">cd_rs_td</a></td></tr>
+<tr class="memdesc:af12cf7c0979b54d59c8127f3525d544e"><td class="mdescLeft">&#160;</td><td class="mdescRight">CD ring-strip time difference for each layer.  <br /></td></tr>
+<tr class="separator:af12cf7c0979b54d59c8127f3525d544e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9df074537d6021c2f642965691e486b2" id="r_a9df074537d6021c2f642965691e486b2"><td class="memItemLeft" align="right" valign="top">TH2F *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9df074537d6021c2f642965691e486b2">cd_EdE</a></td></tr>
 <tr class="memdesc:a9df074537d6021c2f642965691e486b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Histogram for the CD E-dE that are real (calibrated)  <br /></td></tr>
 <tr class="separator:a9df074537d6021c2f642965691e486b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2316,8 +2316,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c70d6380aa6722cdb399fb4727cd6fc" name="a5c70d6380aa6722cdb399fb4727cd6fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c70d6380aa6722cdb399fb4727cd6fc">&#9670;&#160;</a></span>cd_pn_en</h2>
+<a id="a466ac1f3796e8841aa8bddb926159f2a" name="a466ac1f3796e8841aa8bddb926159f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a466ac1f3796e8841aa8bddb926159f2a">&#9670;&#160;</a></span>cd_rs_en</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2326,7 +2326,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;TH2F*&gt; ISSEventBuilder::cd_pn_en</td>
+          <td class="memname">std::vector&lt;TH2F*&gt; ISSEventBuilder::cd_rs_en</td>
         </tr>
       </table>
   </td>
@@ -2339,32 +2339,6 @@ Private Attributes</h2></td></tr>
 <p>CD ring-strip energy matrix for each layer. </p>
 
 <p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00427">427</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
-
-</div>
-</div>
-<a id="a5fb368978eb10df4dda8558dc3b47594" name="a5fb368978eb10df4dda8558dc3b47594"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fb368978eb10df4dda8558dc3b47594">&#9670;&#160;</a></span>cd_pn_td</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;TH1F*&gt; ISSEventBuilder::cd_pn_td</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>CD ring-strip time difference for each layer. </p>
-
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00428">428</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2391,6 +2365,32 @@ Private Attributes</h2></td></tr>
 <p>CD ring-strip multiplicity for each layer. </p>
 
 <p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00426">426</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+
+</div>
+</div>
+<a id="af12cf7c0979b54d59c8127f3525d544e" name="af12cf7c0979b54d59c8127f3525d544e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af12cf7c0979b54d59c8127f3525d544e">&#9670;&#160;</a></span>cd_rs_td</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;TH1F*&gt; ISSEventBuilder::cd_rs_td</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CD ring-strip time difference for each layer. </p>
+
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00428">428</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
