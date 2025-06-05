@@ -34,11 +34,12 @@ var searchData=
   ['gamma_5fhit_5fwindow_31',['gamma_hit_window',['../classISSSettings.html#a36bbc02e7e8d1e84bb31465e4d5de3dc',1,'ISSSettings']]],
   ['gamma_5frecoil_32',['gamma_recoil',['../classISSHistogrammer.html#a2cd9a0d03140f5a7f4120a08b5c972a8',1,'ISSHistogrammer']]],
   ['gamma_5frecoil_5ftd_33',['gamma_recoil_td',['../classISSHistogrammer.html#adc762d3458b30b695b0d9f7edaa37ac4',1,'ISSHistogrammer']]],
-  ['gelname_34',['gElName',['../Reaction_8hh.html#a35cdfd07c72746ef0de43531a2eff02b',1,'Reaction.hh']]],
-  ['generic_5fevt_35',['generic_evt',['../classISSHistogrammer.html#afeca205adfbd8a1a2ad863d56e608b6a',1,'ISSHistogrammer']]],
-  ['gphc_36',['gPHC',['../classISSReaction.html#a49f9b17ebdb624e42438bf555afd262a',1,'ISSReaction']]],
-  ['gphc_5finv_37',['gPHC_inv',['../classISSReaction.html#a0d8699a45c40e404ad7dfbd7b221ed7a',1,'ISSReaction']]],
-  ['grange_38',['gRange',['../classISSReaction.html#ab046d9c215f2be2f43f3af6d2cb3fcc4',1,'ISSReaction']]],
-  ['gstopping_39',['gStopping',['../classISSReaction.html#aa4d5668b2abdd62b03825bfc655f6287',1,'ISSReaction']]],
-  ['gui_5fflag_40',['gui_flag',['../iss__sort_8cc.html#a3570c7473853b430e9fab3b030ac450b',1,'iss_sort.cc']]]
+  ['gamma_5frecoilt_34',['gamma_recoilT',['../classISSHistogrammer.html#a6389b9a364ebeffd0706d638eb9f8058',1,'ISSHistogrammer']]],
+  ['gelname_35',['gElName',['../Reaction_8hh.html#a35cdfd07c72746ef0de43531a2eff02b',1,'Reaction.hh']]],
+  ['generic_5fevt_36',['generic_evt',['../classISSHistogrammer.html#afeca205adfbd8a1a2ad863d56e608b6a',1,'ISSHistogrammer']]],
+  ['gphc_37',['gPHC',['../classISSReaction.html#a49f9b17ebdb624e42438bf555afd262a',1,'ISSReaction']]],
+  ['gphc_5finv_38',['gPHC_inv',['../classISSReaction.html#a0d8699a45c40e404ad7dfbd7b221ed7a',1,'ISSReaction']]],
+  ['grange_39',['gRange',['../classISSReaction.html#ab046d9c215f2be2f43f3af6d2cb3fcc4',1,'ISSReaction']]],
+  ['gstopping_40',['gStopping',['../classISSReaction.html#aa4d5668b2abdd62b03825bfc655f6287',1,'ISSReaction']]],
+  ['gui_5fflag_41',['gui_flag',['../iss__sort_8cc.html#a3570c7473853b430e9fab3b030ac450b',1,'iss_sort.cc']]]
 ];
