@@ -62,7 +62,7 @@ var searchData=
   ['recoil_5fsector_59',['recoil_sector',['../classISSSettings.html#a6da6f73c10f884d86b842d037b3fff17',1,'ISSSettings']]],
   ['recoil_5ftdiff_60',['recoil_tdiff',['../classISSEventBuilder.html#a43e12b4a017e2056c74ebc00a776b834',1,'ISSEventBuilder']]],
   ['recoil_5fvme_61',['recoil_vme',['../classISSSettings.html#a6e5c3f38ae80f272293596a703b8c2ea',1,'ISSSettings']]],
-  ['recoilcut_62',['RecoilCut',['../classISSHistogrammer.html#adad24de6dbd46ce1a9b6ab2f671913da',1,'ISSHistogrammer']]],
+  ['recoilcut_62',['RecoilCut',['../classISSHistogrammer.html#a6bb3ed20912153d376c71997d6e6313a',1,'ISSHistogrammer::RecoilCut(std::shared_ptr&lt; ISSRecoilEvt &gt; r)'],['../classISSHistogrammer.html#a1e2d9f3874d346622f410857690cd27d',1,'ISSHistogrammer::RecoilCut(std::shared_ptr&lt; ISSCDEvt &gt; r)']]],
   ['recoilcutfile_63',['recoilcutfile',['../classISSReaction.html#adb9512f5ccfd619926bdeca3390f6c39',1,'ISSReaction']]],
   ['recoilcutname_64',['recoilcutname',['../classISSReaction.html#aee8d77de7342c200a7576b281236825a',1,'ISSReaction']]],
   ['recoilfinder_65',['RecoilFinder',['../classISSEventBuilder.html#a5326996598925e0686287c18a3cf21db',1,'ISSEventBuilder']]],

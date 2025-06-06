@@ -11,7 +11,7 @@ var searchData=
   ['readsettings_8',['ReadSettings',['../classISSSettings.html#a5ba379b85ad46d4be6b9d37ff6df6f9d',1,'ISSSettings']]],
   ['readstoppingpowers_9',['ReadStoppingPowers',['../classISSReaction.html#ab3971fa9b0c406b88590283d27710cf7',1,'ISSReaction']]],
   ['readwithseq_10',['ReadWithSeq',['../classDataSpy.html#a811ce7aa77184a78f1d3de03c30dbd24',1,'DataSpy']]],
-  ['recoilcut_11',['RecoilCut',['../classISSHistogrammer.html#adad24de6dbd46ce1a9b6ab2f671913da',1,'ISSHistogrammer']]],
+  ['recoilcut_11',['RecoilCut',['../classISSHistogrammer.html#a6bb3ed20912153d376c71997d6e6313a',1,'ISSHistogrammer::RecoilCut(std::shared_ptr&lt; ISSRecoilEvt &gt; r)'],['../classISSHistogrammer.html#a1e2d9f3874d346622f410857690cd27d',1,'ISSHistogrammer::RecoilCut(std::shared_ptr&lt; ISSCDEvt &gt; r)']]],
   ['recoilfinder_12',['RecoilFinder',['../classISSEventBuilder.html#a5326996598925e0686287c18a3cf21db',1,'ISSEventBuilder']]],
   ['recoiltype_13',['RecoilType',['../classISSReaction.html#a0956fe54f039125f2b50f521d52404f8',1,'ISSReaction']]],
   ['reset_5fconv_5fhists_14',['reset_conv_hists',['../iss__sort_8cc.html#a5a9cc2ced9ddc357a74bf334e73ef7b0',1,'iss_sort.cc']]],
