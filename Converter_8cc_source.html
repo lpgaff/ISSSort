@@ -2107,53 +2107,57 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01967" name="l01967"></a><span class="lineno"> 1967</span>    <span class="keywordflow">if</span>( n_ents &amp;&amp; do_sort ){</div>
 <div class="line"><a id="l01968" name="l01968"></a><span class="lineno"> 1968</span> </div>
 <div class="line"><a id="l01969" name="l01969"></a><span class="lineno"> 1969</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Building time-ordered index of events...&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l01970" name="l01970"></a><span class="lineno"> 1970</span>        std::sort( <a class="code hl_variable" href="classISSConverter.html#adbc8213a1646dcf52236043a6902185b">data_vector</a>.begin(), <a class="code hl_variable" href="classISSConverter.html#adbc8213a1646dcf52236043a6902185b">data_vector</a>.end() ); <span class="comment">// std::vector method</span></div>
-<div class="line"><a id="l01971" name="l01971"></a><span class="lineno"> 1971</span> </div>
-<div class="line"><a id="l01972" name="l01972"></a><span class="lineno"> 1972</span>    }</div>
-<div class="line"><a id="l01973" name="l01973"></a><span class="lineno"> 1973</span>    <span class="keywordflow">else</span> <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l01974" name="l01974"></a><span class="lineno"> 1974</span> </div>
-<div class="line"><a id="l01975" name="l01975"></a><span class="lineno"> 1975</span>    <span class="comment">// Loop on t_raw entries and fill t</span></div>
-<div class="line"><a id="l01976" name="l01976"></a><span class="lineno"> 1976</span>    <span class="keywordflow">for</span>( <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> i = 0; i &lt; n_ents; ++i ) {</div>
-<div class="line"><a id="l01977" name="l01977"></a><span class="lineno"> 1977</span> </div>
-<div class="line"><a id="l01978" name="l01978"></a><span class="lineno"> 1978</span>        <span class="comment">// Get the data item back from the vector</span></div>
-<div class="line"><a id="l01979" name="l01979"></a><span class="lineno"> 1979</span>        <a class="code hl_variable" href="classISSConverter.html#a8170d6195e35d9dd30d9282a8f5625d5">write_packet</a>-&gt;SetData( <a class="code hl_variable" href="classISSConverter.html#adbc8213a1646dcf52236043a6902185b">data_vector</a>[i] );</div>
-<div class="line"><a id="l01980" name="l01980"></a><span class="lineno"> 1980</span> </div>
-<div class="line"><a id="l01981" name="l01981"></a><span class="lineno"> 1981</span>        <span class="comment">// Fill the sorted tree</span></div>
-<div class="line"><a id="l01982" name="l01982"></a><span class="lineno"> 1982</span>        <a class="code hl_variable" href="classISSConverter.html#a60ba77930edaaa4049fde480cb9aae79">sorted_tree</a>-&gt;Fill();</div>
-<div class="line"><a id="l01983" name="l01983"></a><span class="lineno"> 1983</span> </div>
-<div class="line"><a id="l01984" name="l01984"></a><span class="lineno"> 1984</span>        <span class="comment">// Progress bar</span></div>
-<div class="line"><a id="l01985" name="l01985"></a><span class="lineno"> 1985</span>        <span class="keywordtype">bool</span> update_progress = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01986" name="l01986"></a><span class="lineno"> 1986</span>        <span class="keywordflow">if</span>( n_ents &lt; 200 )</div>
-<div class="line"><a id="l01987" name="l01987"></a><span class="lineno"> 1987</span>            update_progress = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01988" name="l01988"></a><span class="lineno"> 1988</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( i % (n_ents/100) == 0 || i+1 == n_ents )</div>
-<div class="line"><a id="l01989" name="l01989"></a><span class="lineno"> 1989</span>            update_progress = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01990" name="l01990"></a><span class="lineno"> 1990</span> </div>
-<div class="line"><a id="l01991" name="l01991"></a><span class="lineno"> 1991</span>        <span class="comment">// Print progress</span></div>
-<div class="line"><a id="l01992" name="l01992"></a><span class="lineno"> 1992</span>        <span class="keywordflow">if</span>( update_progress ) {</div>
-<div class="line"><a id="l01993" name="l01993"></a><span class="lineno"> 1993</span> </div>
-<div class="line"><a id="l01994" name="l01994"></a><span class="lineno"> 1994</span>            <span class="comment">// Percent complete</span></div>
-<div class="line"><a id="l01995" name="l01995"></a><span class="lineno"> 1995</span>            <span class="keywordtype">float</span> percent = (float)(i+1)*100.0/(float)n_ents;</div>
-<div class="line"><a id="l01996" name="l01996"></a><span class="lineno"> 1996</span> </div>
-<div class="line"><a id="l01997" name="l01997"></a><span class="lineno"> 1997</span>            <span class="comment">// Progress bar in GUI</span></div>
-<div class="line"><a id="l01998" name="l01998"></a><span class="lineno"> 1998</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="classISSConverter.html#ab7a3f2a356c4a4c3f2baf1da5c6386c5">_prog_</a> ) {</div>
-<div class="line"><a id="l01999" name="l01999"></a><span class="lineno"> 1999</span> </div>
-<div class="line"><a id="l02000" name="l02000"></a><span class="lineno"> 2000</span>                <a class="code hl_variable" href="classISSConverter.html#a96eb71834c75715ff7399aa1c9e26f36">prog</a>-&gt;SetPosition( percent );</div>
-<div class="line"><a id="l02001" name="l02001"></a><span class="lineno"> 2001</span>                gSystem-&gt;ProcessEvents();</div>
-<div class="line"><a id="l02002" name="l02002"></a><span class="lineno"> 2002</span> </div>
-<div class="line"><a id="l02003" name="l02003"></a><span class="lineno"> 2003</span>            }</div>
-<div class="line"><a id="l02004" name="l02004"></a><span class="lineno"> 2004</span> </div>
-<div class="line"><a id="l02005" name="l02005"></a><span class="lineno"> 2005</span>            <span class="comment">// Progress bar in terminal</span></div>
-<div class="line"><a id="l02006" name="l02006"></a><span class="lineno"> 2006</span>            std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(6) &lt;&lt; std::setprecision(4);</div>
-<div class="line"><a id="l02007" name="l02007"></a><span class="lineno"> 2007</span>            std::cout &lt;&lt; percent &lt;&lt; <span class="stringliteral">&quot;%    \r&quot;</span>;</div>
-<div class="line"><a id="l02008" name="l02008"></a><span class="lineno"> 2008</span>            std::cout.flush();</div>
-<div class="line"><a id="l02009" name="l02009"></a><span class="lineno"> 2009</span> </div>
-<div class="line"><a id="l02010" name="l02010"></a><span class="lineno"> 2010</span>        } <span class="comment">// progress bar</span></div>
-<div class="line"><a id="l02011" name="l02011"></a><span class="lineno"> 2011</span> </div>
-<div class="line"><a id="l02012" name="l02012"></a><span class="lineno"> 2012</span>    } <span class="comment">// i</span></div>
+<div class="line"><a id="l01970" name="l01970"></a><span class="lineno"> 1970</span>        <span class="comment">//std::sort( data_vector.begin(), data_vector.end() ); // std::vector method</span></div>
+<div class="line"><a id="l01971" name="l01971"></a><span class="lineno"> 1971</span>        std::sort( <a class="code hl_variable" href="classISSConverter.html#adbc8213a1646dcf52236043a6902185b">data_vector</a>.begin(), <a class="code hl_variable" href="classISSConverter.html#adbc8213a1646dcf52236043a6902185b">data_vector</a>.end(),</div>
+<div class="line"><a id="l01972" name="l01972"></a><span class="lineno"> 1972</span>                  []( std::shared_ptr&lt;ISSDataPackets&gt; &amp;lhs, std::shared_ptr&lt;ISSDataPackets&gt; &amp;rhs) {</div>
+<div class="line"><a id="l01973" name="l01973"></a><span class="lineno"> 1973</span>            return lhs-&gt;GetTime() &lt; rhs-&gt;GetTime();</div>
+<div class="line"><a id="l01974" name="l01974"></a><span class="lineno"> 1974</span>        } );</div>
+<div class="line"><a id="l01975" name="l01975"></a><span class="lineno"> 1975</span> </div>
+<div class="line"><a id="l01976" name="l01976"></a><span class="lineno"> 1976</span>    }</div>
+<div class="line"><a id="l01977" name="l01977"></a><span class="lineno"> 1977</span>    <span class="keywordflow">else</span> <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l01978" name="l01978"></a><span class="lineno"> 1978</span> </div>
+<div class="line"><a id="l01979" name="l01979"></a><span class="lineno"> 1979</span>    <span class="comment">// Loop on t_raw entries and fill t</span></div>
+<div class="line"><a id="l01980" name="l01980"></a><span class="lineno"> 1980</span>    <span class="keywordflow">for</span>( <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> i = 0; i &lt; n_ents; ++i ) {</div>
+<div class="line"><a id="l01981" name="l01981"></a><span class="lineno"> 1981</span> </div>
+<div class="line"><a id="l01982" name="l01982"></a><span class="lineno"> 1982</span>        <span class="comment">// Get the data item back from the vector</span></div>
+<div class="line"><a id="l01983" name="l01983"></a><span class="lineno"> 1983</span>        <a class="code hl_variable" href="classISSConverter.html#a8170d6195e35d9dd30d9282a8f5625d5">write_packet</a>-&gt;SetData( <a class="code hl_variable" href="classISSConverter.html#adbc8213a1646dcf52236043a6902185b">data_vector</a>[i] );</div>
+<div class="line"><a id="l01984" name="l01984"></a><span class="lineno"> 1984</span> </div>
+<div class="line"><a id="l01985" name="l01985"></a><span class="lineno"> 1985</span>        <span class="comment">// Fill the sorted tree</span></div>
+<div class="line"><a id="l01986" name="l01986"></a><span class="lineno"> 1986</span>        <a class="code hl_variable" href="classISSConverter.html#a60ba77930edaaa4049fde480cb9aae79">sorted_tree</a>-&gt;Fill();</div>
+<div class="line"><a id="l01987" name="l01987"></a><span class="lineno"> 1987</span> </div>
+<div class="line"><a id="l01988" name="l01988"></a><span class="lineno"> 1988</span>        <span class="comment">// Progress bar</span></div>
+<div class="line"><a id="l01989" name="l01989"></a><span class="lineno"> 1989</span>        <span class="keywordtype">bool</span> update_progress = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01990" name="l01990"></a><span class="lineno"> 1990</span>        <span class="keywordflow">if</span>( n_ents &lt; 200 )</div>
+<div class="line"><a id="l01991" name="l01991"></a><span class="lineno"> 1991</span>            update_progress = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01992" name="l01992"></a><span class="lineno"> 1992</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( i % (n_ents/100) == 0 || i+1 == n_ents )</div>
+<div class="line"><a id="l01993" name="l01993"></a><span class="lineno"> 1993</span>            update_progress = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01994" name="l01994"></a><span class="lineno"> 1994</span> </div>
+<div class="line"><a id="l01995" name="l01995"></a><span class="lineno"> 1995</span>        <span class="comment">// Print progress</span></div>
+<div class="line"><a id="l01996" name="l01996"></a><span class="lineno"> 1996</span>        <span class="keywordflow">if</span>( update_progress ) {</div>
+<div class="line"><a id="l01997" name="l01997"></a><span class="lineno"> 1997</span> </div>
+<div class="line"><a id="l01998" name="l01998"></a><span class="lineno"> 1998</span>            <span class="comment">// Percent complete</span></div>
+<div class="line"><a id="l01999" name="l01999"></a><span class="lineno"> 1999</span>            <span class="keywordtype">float</span> percent = (float)(i+1)*100.0/(float)n_ents;</div>
+<div class="line"><a id="l02000" name="l02000"></a><span class="lineno"> 2000</span> </div>
+<div class="line"><a id="l02001" name="l02001"></a><span class="lineno"> 2001</span>            <span class="comment">// Progress bar in GUI</span></div>
+<div class="line"><a id="l02002" name="l02002"></a><span class="lineno"> 2002</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="classISSConverter.html#ab7a3f2a356c4a4c3f2baf1da5c6386c5">_prog_</a> ) {</div>
+<div class="line"><a id="l02003" name="l02003"></a><span class="lineno"> 2003</span> </div>
+<div class="line"><a id="l02004" name="l02004"></a><span class="lineno"> 2004</span>                <a class="code hl_variable" href="classISSConverter.html#a96eb71834c75715ff7399aa1c9e26f36">prog</a>-&gt;SetPosition( percent );</div>
+<div class="line"><a id="l02005" name="l02005"></a><span class="lineno"> 2005</span>                gSystem-&gt;ProcessEvents();</div>
+<div class="line"><a id="l02006" name="l02006"></a><span class="lineno"> 2006</span> </div>
+<div class="line"><a id="l02007" name="l02007"></a><span class="lineno"> 2007</span>            }</div>
+<div class="line"><a id="l02008" name="l02008"></a><span class="lineno"> 2008</span> </div>
+<div class="line"><a id="l02009" name="l02009"></a><span class="lineno"> 2009</span>            <span class="comment">// Progress bar in terminal</span></div>
+<div class="line"><a id="l02010" name="l02010"></a><span class="lineno"> 2010</span>            std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::setw(6) &lt;&lt; std::setprecision(4);</div>
+<div class="line"><a id="l02011" name="l02011"></a><span class="lineno"> 2011</span>            std::cout &lt;&lt; percent &lt;&lt; <span class="stringliteral">&quot;%    \r&quot;</span>;</div>
+<div class="line"><a id="l02012" name="l02012"></a><span class="lineno"> 2012</span>            std::cout.flush();</div>
 <div class="line"><a id="l02013" name="l02013"></a><span class="lineno"> 2013</span> </div>
-<div class="line"><a id="l02014" name="l02014"></a><span class="lineno"> 2014</span>    <span class="keywordflow">return</span> n_ents;</div>
+<div class="line"><a id="l02014" name="l02014"></a><span class="lineno"> 2014</span>        } <span class="comment">// progress bar</span></div>
 <div class="line"><a id="l02015" name="l02015"></a><span class="lineno"> 2015</span> </div>
-<div class="line"><a id="l02016" name="l02016"></a><span class="lineno"> 2016</span>}</div>
+<div class="line"><a id="l02016" name="l02016"></a><span class="lineno"> 2016</span>    } <span class="comment">// i</span></div>
+<div class="line"><a id="l02017" name="l02017"></a><span class="lineno"> 2017</span> </div>
+<div class="line"><a id="l02018" name="l02018"></a><span class="lineno"> 2018</span>    <span class="keywordflow">return</span> n_ents;</div>
+<div class="line"><a id="l02019" name="l02019"></a><span class="lineno"> 2019</span> </div>
+<div class="line"><a id="l02020" name="l02020"></a><span class="lineno"> 2020</span>}</div>
 </div>
 <div class="ttc" id="aConverter_8hh_html"><div class="ttname"><a href="Converter_8hh.html">Converter.hh</a></div></div>
 <div class="ttc" id="aclassISSAsicData_html"><div class="ttname"><a href="classISSAsicData.html">ISSAsicData</a></div><div class="ttdef"><b>Definition</b> <a href="DataPackets_8hh_source.html#l00009">DataPackets.hh:9</a></div></div>
