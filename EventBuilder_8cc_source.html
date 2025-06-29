@@ -3578,7 +3578,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03499" name="l03499"></a><span class="lineno"> 3499</span>        hname = <span class="stringliteral">&quot;cd_rs_en_&quot;</span> + std::to_string(i);</div>
 <div class="line"><a id="l03500" name="l03500"></a><span class="lineno"> 3500</span>        htitle = <span class="stringliteral">&quot;ring vs. sector energy (layer &quot;</span>;</div>
 <div class="line"><a id="l03501" name="l03501"></a><span class="lineno"> 3501</span>        htitle += std::to_string(i) + <span class="stringliteral">&quot;);Energy rings (keV);Energy sectors (keV)&quot;</span>;</div>
-<div class="line"><a id="l03502" name="l03502"></a><span class="lineno"> 3502</span>        <a class="code hl_variable" href="classISSEventBuilder.html#a466ac1f3796e8841aa8bddb926159f2a">cd_rs_en</a>[i] = <span class="keyword">new</span> TH2F( hname.data(), htitle.data(), 6e3, 0, 120e3, 6e3, 0, 120e3 );</div>
+<div class="line"><a id="l03502" name="l03502"></a><span class="lineno"> 3502</span>        <a class="code hl_variable" href="classISSEventBuilder.html#a466ac1f3796e8841aa8bddb926159f2a">cd_rs_en</a>[i] = <span class="keyword">new</span> TH2F( hname.data(), htitle.data(), 5e3, 0, 2e6, 5e3, 0, 2e6 );</div>
 <div class="line"><a id="l03503" name="l03503"></a><span class="lineno"> 3503</span> </div>
 <div class="line"><a id="l03504" name="l03504"></a><span class="lineno"> 3504</span>        hname = <span class="stringliteral">&quot;cd_rs_td_&quot;</span> + std::to_string(i);</div>
 <div class="line"><a id="l03505" name="l03505"></a><span class="lineno"> 3505</span>        htitle = <span class="stringliteral">&quot;ring vs. sector time difference (layer &quot;</span>;</div>
@@ -3590,24 +3590,24 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03511" name="l03511"></a><span class="lineno"> 3511</span>        htitle += std::to_string(i) + <span class="stringliteral">&quot;);Ring ID; Energy (10 keV)&quot;</span>;</div>
 <div class="line"><a id="l03512" name="l03512"></a><span class="lineno"> 3512</span>        <a class="code hl_variable" href="classISSEventBuilder.html#ace4d3df845bcb7191ae93a3596b01e70">cd_r_en</a>[i] = <span class="keyword">new</span> TH2F( hname.data(), htitle.data(),</div>
 <div class="line"><a id="l03513" name="l03513"></a><span class="lineno"> 3513</span>                              <a class="code hl_variable" href="classISSEventBuilder.html#a3301e0b2c8b9e43adc77eb91b44b42f7">set</a>-&gt;GetNumberOfCDRings()+1, -0.5, <a class="code hl_variable" href="classISSEventBuilder.html#a3301e0b2c8b9e43adc77eb91b44b42f7">set</a>-&gt;GetNumberOfCDRings()+0.5,</div>
-<div class="line"><a id="l03514" name="l03514"></a><span class="lineno"> 3514</span>                              6e3, 0, 120e3 );</div>
+<div class="line"><a id="l03514" name="l03514"></a><span class="lineno"> 3514</span>                              5e3, 0, 2e6 );</div>
 <div class="line"><a id="l03515" name="l03515"></a><span class="lineno"> 3515</span> </div>
 <div class="line"><a id="l03516" name="l03516"></a><span class="lineno"> 3516</span>        hname = <span class="stringliteral">&quot;cd_s_en_&quot;</span> + std::to_string(i);</div>
 <div class="line"><a id="l03517" name="l03517"></a><span class="lineno"> 3517</span>        htitle = <span class="stringliteral">&quot;Sector ID vs. energy (layer &quot;</span>;</div>
 <div class="line"><a id="l03518" name="l03518"></a><span class="lineno"> 3518</span>        htitle += std::to_string(i) + <span class="stringliteral">&quot;);Sector ID; Energy (10 keV)&quot;</span>;</div>
 <div class="line"><a id="l03519" name="l03519"></a><span class="lineno"> 3519</span>        <a class="code hl_variable" href="classISSEventBuilder.html#a4283c279fa9022d0fff8fe0de3013908">cd_s_en</a>[i] = <span class="keyword">new</span> TH2F( hname.data(), htitle.data(),</div>
 <div class="line"><a id="l03520" name="l03520"></a><span class="lineno"> 3520</span>                              <a class="code hl_variable" href="classISSEventBuilder.html#a3301e0b2c8b9e43adc77eb91b44b42f7">set</a>-&gt;GetNumberOfCDSectors()+1, -0.5, <a class="code hl_variable" href="classISSEventBuilder.html#a3301e0b2c8b9e43adc77eb91b44b42f7">set</a>-&gt;GetNumberOfCDSectors()+0.5,</div>
-<div class="line"><a id="l03521" name="l03521"></a><span class="lineno"> 3521</span>                              6e3, 0, 120e3 );</div>
+<div class="line"><a id="l03521" name="l03521"></a><span class="lineno"> 3521</span>                              5e3, 0, 2e6 );</div>
 <div class="line"><a id="l03522" name="l03522"></a><span class="lineno"> 3522</span> </div>
 <div class="line"><a id="l03523" name="l03523"></a><span class="lineno"> 3523</span>    }</div>
 <div class="line"><a id="l03524" name="l03524"></a><span class="lineno"> 3524</span> </div>
 <div class="line"><a id="l03525" name="l03525"></a><span class="lineno"> 3525</span>    hname = <span class="stringliteral">&quot;cd_EdE&quot;</span>;</div>
 <div class="line"><a id="l03526" name="l03526"></a><span class="lineno"> 3526</span>    htitle = <span class="stringliteral">&quot;CD fission fragments dE vs E;Rest Energy [keV];Energy Loss [keV];Counts&quot;</span>;</div>
-<div class="line"><a id="l03527" name="l03527"></a><span class="lineno"> 3527</span>    <a class="code hl_variable" href="classISSEventBuilder.html#a9df074537d6021c2f642965691e486b2">cd_EdE</a> = <span class="keyword">new</span> TH2F( hname.data(), htitle.data(), 6e3, 0, 120e3, 6e3, 0, 120e3 );</div>
+<div class="line"><a id="l03527" name="l03527"></a><span class="lineno"> 3527</span>    <a class="code hl_variable" href="classISSEventBuilder.html#a9df074537d6021c2f642965691e486b2">cd_EdE</a> = <span class="keyword">new</span> TH2F( hname.data(), htitle.data(), 5e3, 0, 2e6, 5e3, 0, 2e6 );</div>
 <div class="line"><a id="l03528" name="l03528"></a><span class="lineno"> 3528</span> </div>
 <div class="line"><a id="l03529" name="l03529"></a><span class="lineno"> 3529</span>    hname = <span class="stringliteral">&quot;cd_dEsum&quot;</span>;</div>
 <div class="line"><a id="l03530" name="l03530"></a><span class="lineno"> 3530</span>    htitle = <span class="stringliteral">&quot;CD fission fragments dE vs total energy;Total Energy [keV];Energy Loss [keV];Counts&quot;</span>;</div>
-<div class="line"><a id="l03531" name="l03531"></a><span class="lineno"> 3531</span>    <a class="code hl_variable" href="classISSEventBuilder.html#aa41164e8d32133b85c0d81fe445e4706">cd_dEsum</a> = <span class="keyword">new</span> TH2F( hname.data(), htitle.data(), 9e3, 0, 180e3, 6e3, 0, 120e3 );</div>
+<div class="line"><a id="l03531" name="l03531"></a><span class="lineno"> 3531</span>    <a class="code hl_variable" href="classISSEventBuilder.html#aa41164e8d32133b85c0d81fe445e4706">cd_dEsum</a> = <span class="keyword">new</span> TH2F( hname.data(), htitle.data(), 5e3, 0, 2e6, 5e3, 0, 2e6 );</div>
 <div class="line"><a id="l03532" name="l03532"></a><span class="lineno"> 3532</span> </div>
 <div class="line"><a id="l03533" name="l03533"></a><span class="lineno"> 3533</span>    hname = <span class="stringliteral">&quot;cd_id_td&quot;</span>;</div>
 <div class="line"><a id="l03534" name="l03534"></a><span class="lineno"> 3534</span>    htitle = <span class="stringliteral">&quot;CD time difference between dE layer (id=0) and all other layers;&quot;</span>;</div>
