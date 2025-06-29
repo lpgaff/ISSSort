@@ -1213,7 +1213,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> idx_next;</div>
 <div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>        <span class="keywordflow">if</span>( i+1 == <a class="code hl_variable" href="classISSEventBuilder.html#a56338b1311144499ae19f36e578c618e">n_entries</a> ) idx_next = <a class="code hl_variable" href="classISSEventBuilder.html#a56338b1311144499ae19f36e578c618e">n_entries</a>;</div>
 <div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>            idx_next = <a class="code hl_variable" href="classISSEventBuilder.html#a56338b1311144499ae19f36e578c618e">n_entries</a>;</div>
+<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>            idx_next = i+1;</div>
 <div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>            <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classISSEventBuilder.html#a3301e0b2c8b9e43adc77eb91b44b42f7">set</a>-&gt;BuildByTimeStamp() )</div>
 <div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>                idx_next = att_index-&gt;GetIndex()[i+1];</div>
 <div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span>        }</div>
