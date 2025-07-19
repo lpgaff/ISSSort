@@ -130,9 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6e5cd4126fb1832fe68ceadea4f074ad" id="r_a6e5cd4126fb1832fe68ceadea4f074ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e5cd4126fb1832fe68ceadea4f074ad">Initialise</a> ()</td></tr>
 <tr class="memdesc:a6e5cd4126fb1832fe68ceadea4f074ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called for every event.  <br /></td></tr>
 <tr class="separator:a6e5cd4126fb1832fe68ceadea4f074ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb55f23b469e6e7764c6a7e878b9e3c6" id="r_aeb55f23b469e6e7764c6a7e878b9e3c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb55f23b469e6e7764c6a7e878b9e3c6">ResetHist</a> (TObject *obj, std::string cls)</td></tr>
-<tr class="memdesc:aeb55f23b469e6e7764c6a7e878b9e3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function empties the histograms used in the EventBuilder class; used during the <a class="el" href="classDataSpy.html">DataSpy</a>.  <br /></td></tr>
-<tr class="separator:aeb55f23b469e6e7764c6a7e878b9e3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e542d2384ac1033a5062c15578aece5" id="r_a2e542d2384ac1033a5062c15578aece5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e542d2384ac1033a5062c15578aece5">ResetHist</a> (TObject *obj)</td></tr>
+<tr class="memdesc:a2e542d2384ac1033a5062c15578aece5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function empties the histograms used in the EventBuilder class; used during the <a class="el" href="classDataSpy.html">DataSpy</a>.  <br /></td></tr>
+<tr class="separator:a2e542d2384ac1033a5062c15578aece5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59ef5cacd2f7f6b93a8157b021966acc" id="r_a59ef5cacd2f7f6b93a8157b021966acc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59ef5cacd2f7f6b93a8157b021966acc">MakeHists</a> ()</td></tr>
 <tr class="memdesc:a59ef5cacd2f7f6b93a8157b021966acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates histograms for events that occur.  <br /></td></tr>
 <tr class="separator:a59ef5cacd2f7f6b93a8157b021966acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -968,7 +968,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00145">145</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00149">149</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1034,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00151">151</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00155">155</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1056,7 @@ Private Attributes</h2></td></tr>
 <p>Processes all hits on the array that fall within the build window. </p>
 <p>This function processes a series of vectors that are populated in a given build window, and deals with the signals accordingly. This is currently done on a case-by-case basis i.e. each different number of p-side and n-side hits is dealt with in it's own section. Charge addback is implemented for neighbouring strips that fall within a prompt coincidence window defined by the user in the <a class="el" href="classISSSettings.html" title="Class to implement user &quot;settings&quot; to the ISS sort code.">ISSSettings</a> file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l01522">1522</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l01511">1511</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1078,7 +1078,7 @@ Private Attributes</h2></td></tr>
 <p>Do the mapping of the array just once. </p>
 <p>This maps the vectors for the array just once, assuming you dont change array geomerty between run files! </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00022">22</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00025">25</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +1101,7 @@ Private Attributes</h2></td></tr>
 <p>This loops over all events found in the input file and wraps them up and stores them in the output file </p><dl class="section return"><dt>Returns</dt><dd>The number of entries in the tree that have been sorted (=0 if there is an error) </dd></dl>
 <p>Function to loop over the sort tree and build array and recoil events</p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00430">430</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00433">433</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1124,7 @@ Private Attributes</h2></td></tr>
 <p>This loops over all events found in the input NPTool simualtion file and wraps them up and stores them in the output file </p><dl class="section return"><dt>Returns</dt><dd>The number of entries in the tree that have been sorted (=0 if there is an error) </dd></dl>
 <p>Function to loop over the sort tree and build array and recoil events</p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l01338">1338</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l01327">1327</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1146,7 +1146,7 @@ Private Attributes</h2></td></tr>
 <p>Processes all hits on the CD that fall within the build window. </p>
 <p>This function takes a series of E and dE signals on the silicon CD (fission fragments) detector and determines what hits to keep from these using sensible conditions including a prompt coincidence window. Signals are triggered by the dE detector, but if a corresponding E signal is not found, then a hit at E = 0 is still recorded. We can try to build a number of particles per event by comparing energies, times and sector IDs. This is difficult, but maybe by going through this excercise we can improve how things are done for recoils? </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02778">2778</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02767">2767</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1197,7 +1197,7 @@ Private Attributes</h2></td></tr>
 <p>Called when we set the input tree and need settings and calibration files. </p>
 <p>Initialisation of the process with first file or things. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00194">194</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00197">197</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1219,7 @@ Private Attributes</h2></td></tr>
 <p>Processes all hits on the ELUM that fall within the build window. </p>
 <p>Assesses the validity of events in the ELUM detector. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02572">2572</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02561">2561</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1241,7 +1241,7 @@ Private Attributes</h2></td></tr>
 <p>Processes hits in the ScintArray and maybe HPGe in the future. </p>
 <p>Builds gamma-ray events from the ScintArray and maybe also HPGe detectors in the future. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02665">2665</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02654">2654</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1320,7 +1320,7 @@ Private Attributes</h2></td></tr>
 <p>Clears the vectors that store energies, time differences, ids, module numbers, row numbers, recoil sectors etc. Also resets flags that are relevant for building events. </p>
 <p>This is called at the end of every execution/loop</p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00346">346</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00349">349</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1341,7 +1341,7 @@ Private Attributes</h2></td></tr>
 
 <p>Processes all hits on the LUME that fall within the build window. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02708">2708</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02697">2697</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1363,7 +1363,7 @@ Private Attributes</h2></td></tr>
 <p>Creates histograms for events that occur. </p>
 <p><em>This function doesn't fill any histograms</em>, but just creates them. Called by the <a class="el" href="#ace857f3c92c6cc8678725312c1cafb4b" title="Configures the output for the class.">ISSEventBuilder::SetOutput</a> function </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l03072">3072</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l03061">3061</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1385,7 @@ Private Attributes</h2></td></tr>
 <p>Processes all hits on the MWPC that fall within the build window. </p>
 <p>Assesses the validity of hits in the MWPC detector. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02503">2503</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02492">2492</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1407,7 +1407,7 @@ Private Attributes</h2></td></tr>
 <p>Plot diagnostic histograms in <a class="el" href="classDataSpy.html">DataSpy</a>. </p>
 <p>This function plots common histograms for diagnostic purposes; used during the <a class="el" href="classDataSpy.html">DataSpy</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l03578">3578</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l03567">3567</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1436,7 @@ Private Attributes</h2></td></tr>
 
 <p>Closes the output files from this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00143">143</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00147">147</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1458,12 +1458,12 @@ Private Attributes</h2></td></tr>
 <p>Processes all hits on the recoil detector that fall within the build window. </p>
 <p>This function takes a series of E and dE signals on the silicon recoil detector and determines what hits to keep from these using sensible conditions including a prompt coincidence window. Signals are triggered by the dE detector, but if a corresponding E signal is not found, then a hit at E = 0 is still recorded. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02416">2416</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02405">2405</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
-<a id="aeb55f23b469e6e7764c6a7e878b9e3c6" name="aeb55f23b469e6e7764c6a7e878b9e3c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb55f23b469e6e7764c6a7e878b9e3c6">&#9670;&#160;</a></span>ResetHist()</h2>
+<a id="a2e542d2384ac1033a5062c15578aece5" name="a2e542d2384ac1033a5062c15578aece5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e542d2384ac1033a5062c15578aece5">&#9670;&#160;</a></span>ResetHist()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1471,19 +1471,15 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void ISSEventBuilder::ResetHist </td>
           <td>(</td>
-          <td class="paramtype">TObject *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">TObject *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>cls</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>This function empties the histograms used in the EventBuilder class; used during the <a class="el" href="classDataSpy.html">DataSpy</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l03605">3605</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l03594">3594</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1505,7 +1501,7 @@ Private Attributes</h2></td></tr>
 <p>Empties the histograms during the <a class="el" href="classDataSpy.html">DataSpy</a>. </p>
 <p>This function empties the histograms used in the EventBuilder class; used during the <a class="el" href="classDataSpy.html">DataSpy</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l03620">3620</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l03611">3611</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1534,7 +1530,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <p>Overloaded function for a single file or multiple files</p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00228">228</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00231">231</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1561,7 +1557,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00255">255</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00258">258</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1588,7 +1584,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00271">271</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00274">274</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1615,7 +1611,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00295">295</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00298">298</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1642,7 +1638,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00313">313</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00316">316</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1664,7 +1660,7 @@ Private Attributes</h2></td></tr>
 <p>Called for every file. </p>
 <p>Reset private-member counters, arrays and flags for processing the next input file. Called in the <a class="el" href="#a73825e352435786607847e147e186e04" title="Destructor (currently empty)">ISSEventBuilder::SetInputFile</a> and <a class="el" href="#a53c2f6155db2c55533c73f8d871f0c8a" title="Grabs the input tree from the input file defined in ISSEventBuilder::SetInputFile.">ISSEventBuilder::SetInputTree</a> functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00117">117</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l00120">120</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1686,7 +1682,7 @@ Private Attributes</h2></td></tr>
 <p>Processes all hits on the zero-degree detector that fall within the build window. </p>
 <p>Assesses the validity of events in the zero degree detector. All dE events are recorded because they act as the trigger, even though there may not be a corresponding E signal on this detector. Also imposes a prompt coincidence on these hits, which can be altered in the <a class="el" href="classISSSettings.html" title="Class to implement user &quot;settings&quot; to the ISS sort code.">ISSSettings</a> file </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02604">2604</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8cc_source.html#l02593">2593</a> of file <a class="el" href="EventBuilder_8cc_source.html">EventBuilder.cc</a>.</p>
 
 </div>
 </div>
@@ -1713,7 +1709,7 @@ Private Attributes</h2></td></tr>
 
 <p>Boolean determining if there is a progress bar (in the GUI) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00195">195</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00199">199</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1739,7 +1735,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counts the number of real events (must have n and p-side signals) on the array within a given file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00347">347</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00351">351</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1765,7 +1761,7 @@ Private Attributes</h2></td></tr>
 
 <p>Event structures. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00168">168</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00172">172</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1791,7 +1787,7 @@ Private Attributes</h2></td></tr>
 
 <p>Gives each n-side strip on the array a number for identification (accessed via asic number and channel number on strip) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00221">221</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00225">225</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1817,7 +1813,7 @@ Private Attributes</h2></td></tr>
 
 <p>Gives each p-side strip on the array a unique number for identification (accessed via asic number and channel number on strip) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00220">220</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00224">224</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1843,7 +1839,7 @@ Private Attributes</h2></td></tr>
 
 <p>Gives the row of the array for each channel (accessed via asic number and channel number on strip). Unused channels have their value as 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00219">219</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00223">223</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1869,7 +1865,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counts the number of real p-side events on the array within a given file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00348">348</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00352">352</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1893,7 +1889,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00169">169</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00173">173</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1919,7 +1915,7 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to a given entry in the tree of some data from the ASICs. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00163">163</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00167">167</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1945,7 +1941,7 @@ Private Attributes</h2></td></tr>
 
 <p>ASIC dead time for a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00250">250</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00254">254</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1971,7 +1967,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containing the ASIC period as a function of ASIC time for a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00411">411</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00415">415</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -1997,7 +1993,7 @@ Private Attributes</h2></td></tr>
 
 <p>Previous ASIC time on a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00247">247</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00251">251</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2023,7 +2019,7 @@ Private Attributes</h2></td></tr>
 
 <p>TProfile counting the difference between the number of ASIC pulses and CAEN pulses as a function of ASIC time for a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00410">410</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00414">414</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2049,7 +2045,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector containing the smallest row number for a given p/n-side asic where the index is the asic number. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00218">218</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00222">222</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2075,7 +2071,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector containing 0 for p-side and 1 for n-side where the index is the asic number. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00217">217</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00221">221</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2101,7 +2097,7 @@ Private Attributes</h2></td></tr>
 
 <p>TProfile containing the time difference between ASIC pulses as a function of ASIC time for a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00412">412</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00416">416</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2127,7 +2123,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containing the time difference between ASIC sync pulses and CAEN sync pulses for a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00403">403</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00407">407</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2153,7 +2149,7 @@ Private Attributes</h2></td></tr>
 
 <p>ASIC time on a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00246">246</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00250">250</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2179,7 +2175,7 @@ Private Attributes</h2></td></tr>
 
 <p>Holds the time of the first hit on each asic in the input time-sorted tree (index denotes asic module) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00251">251</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00255">255</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2205,7 +2201,7 @@ Private Attributes</h2></td></tr>
 
 <p>Holds the time of the last hit on each asic in the input time-sorted tree (index denotes asic module) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00252">252</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00256">256</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2231,7 +2227,7 @@ Private Attributes</h2></td></tr>
 
 <p>Length of build window in ns. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00214">214</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00218">218</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2257,7 +2253,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram of the CAEN pulser period. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00394">394</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00398">398</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2283,7 +2279,7 @@ Private Attributes</h2></td></tr>
 
 <p>Holds previous time from the CAEN DAQ. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00241">241</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00245">245</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2309,7 +2305,7 @@ Private Attributes</h2></td></tr>
 
 <p>Time from the caen DAQ. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00240">240</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00244">244</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2335,7 +2331,7 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to an <a class="el" href="classISSCalibration.html" title="A class to read in the calibration file in ROOT&#39;s TConfig format.">ISSCalibration</a> object, used for accessing gain-matching parameters and thresholds. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00187">187</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00191">191</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2361,7 +2357,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counts the number of CD events within a given file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00355">355</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00359">359</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2387,7 +2383,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram for the CD E+dE vs E (calibrated) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00454">454</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00458">458</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2413,7 +2409,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram for the CD E-dE that are real (calibrated) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00453">453</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00457">457</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2438,7 +2434,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Special case of the CD, because we need to handle multiple event simultaneously This is because the detector is a single wafer, we need multiple hits and we have to check charge-sharing (chaos!) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00179">179</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00183">183</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2464,7 +2460,7 @@ Private Attributes</h2></td></tr>
 
 <p>CD time difference between dE and all other layers. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00452">452</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00456">456</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2490,7 +2486,7 @@ Private Attributes</h2></td></tr>
 
 <p>CD ring-energy for each layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00450">450</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00454">454</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2516,7 +2512,7 @@ Private Attributes</h2></td></tr>
 
 <p>CD ring-strip energy matrix for each layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00448">448</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00452">452</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2542,7 +2538,7 @@ Private Attributes</h2></td></tr>
 
 <p>CD ring-strip multiplicity for each layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00447">447</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00451">451</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2568,7 +2564,7 @@ Private Attributes</h2></td></tr>
 
 <p>CD ring-strip time difference for each layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00449">449</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00453">453</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2594,7 +2590,7 @@ Private Attributes</h2></td></tr>
 
 <p>CD strip-energy for each layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00451">451</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00455">455</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2620,7 +2616,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of CD ring energies for CdFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00338">338</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00342">342</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2646,7 +2642,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of CD ring ids for CdFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00340">340</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00344">344</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2672,7 +2668,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of CD ring time differences for CdFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00339">339</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00343">343</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2698,7 +2694,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of CD sector energies for CdFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00341">341</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00345">345</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2724,7 +2720,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of CD ring ids for CdFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00343">343</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00347">347</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2750,7 +2746,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of CD sector time differences for CdFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00342">342</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00346">346</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2774,7 +2770,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00199">199</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00203">203</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2800,7 +2796,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containg the period of ebis pulses. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00395">395</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00399">399</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2826,7 +2822,7 @@ Private Attributes</h2></td></tr>
 
 <p>Holds time of previous ebis pulse. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00236">236</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00240">240</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2852,7 +2848,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of ELUM energies for ELUMFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00312">312</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00316">316</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2878,7 +2874,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counts the number of ELUM events within a given file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00351">351</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00355">355</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2904,7 +2900,7 @@ Private Attributes</h2></td></tr>
 
 <p>The elum spectrum histogram. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00429">429</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00433">433</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2930,7 +2926,7 @@ Private Attributes</h2></td></tr>
 
 <p>The elum spectrum histogram. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00430">430</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00434">434</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2954,7 +2950,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00172">172</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00176">176</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -2980,7 +2976,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of ELUM sectors for ELUMFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00314">314</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00318">318</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3006,7 +3002,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of ELUM time differences for ELUMFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00313">313</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00317">317</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3032,7 +3028,7 @@ Private Attributes</h2></td></tr>
 
 <p>Flag for deciding whether an event is currently being recorded or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00228">228</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00232">232</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3058,7 +3054,7 @@ Private Attributes</h2></td></tr>
 
 <p>Boolean for updating timing signals if the info data is from the caen pulser. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00225">225</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00229">229</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3084,7 +3080,7 @@ Private Attributes</h2></td></tr>
 
 <p>Determines if the event should be closed for a given hit. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00224">224</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00228">228</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3108,7 +3104,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00205">205</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00209">209</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3132,7 +3128,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00208">208</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00212">212</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3158,7 +3154,7 @@ Private Attributes</h2></td></tr>
 
 <p>Flags whether a pause signal has been sent for a gicen module on the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00226">226</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00230">230</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3182,7 +3178,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00227">227</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00231">231</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3208,7 +3204,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containing the FPGA period as a function of FPGA time for a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00408">408</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00412">412</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3234,7 +3230,7 @@ Private Attributes</h2></td></tr>
 
 <p>Previous FPGA time on a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00245">245</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00249">249</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3260,7 +3256,7 @@ Private Attributes</h2></td></tr>
 
 <p>TProfile counting the difference between the number of FPGA pulses and CAEN pulses as a function of FPGA time for a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00407">407</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00411">411</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3286,7 +3282,7 @@ Private Attributes</h2></td></tr>
 
 <p>TProfile containing the time difference between FPGA pulses as a function of FPGA time for a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00409">409</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00413">413</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3312,7 +3308,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containing the time difference between FPGA sync pulses and CAEN sync pulses for a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00402">402</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00406">406</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3338,7 +3334,7 @@ Private Attributes</h2></td></tr>
 
 <p>FPGA time on a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00244">244</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00248">248</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3364,7 +3360,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counts the number of Gamma-Ray events within a given file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00353">353</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00357">357</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3390,7 +3386,7 @@ Private Attributes</h2></td></tr>
 
 <p>Sum gamma-ray energy histogram. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00436">436</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00440">440</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3416,7 +3412,7 @@ Private Attributes</h2></td></tr>
 
 <p>Gamma-ray energy verus detector ID. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00437">437</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00441">441</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3440,7 +3436,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00174">174</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00178">178</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3466,7 +3462,7 @@ Private Attributes</h2></td></tr>
 
 <p>Gamma-gamma matrix, no prompt time condition. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00438">438</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00442">442</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3492,7 +3488,7 @@ Private Attributes</h2></td></tr>
 
 <p>Gamma-gamma time difference. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00439">439</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00443">443</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3516,7 +3512,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00211">211</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00215">215</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3542,7 +3538,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counts the number of hits that make up an event within a given file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00346">346</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00350">350</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3568,7 +3564,7 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the TBranch containing the data in the time-sorted input ROOT file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00161">161</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00165">165</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3594,7 +3590,7 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to a given entry in the tree of the "info" datatype. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00165">165</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00169">169</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3621,7 +3617,7 @@ Private Attributes</h2></td></tr>
 <p>Adds the canvas for the <a class="el" href="classDataSpy.html">DataSpy</a>. </p>
 <p>Input treze Pointer to the time-sorted input ROOT file </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00158">158</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00162">162</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3647,7 +3643,7 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the TTree in the data input file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00159">159</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00163">163</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3673,7 +3669,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containg the period of Laser status signals. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00398">398</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00402">402</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3699,7 +3695,7 @@ Private Attributes</h2></td></tr>
 
 <p>Holds time of previous Laser status pulse. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00239">239</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00243">243</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3725,7 +3721,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of LUME detectors </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00333">333</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00337">337</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3751,7 +3747,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of LUME back energies (signal from the back face) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00327">327</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00331">331</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3777,7 +3773,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of LUME time differences </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00330">330</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00334">334</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3803,7 +3799,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of LUME detectors </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00335">335</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00339">339</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3829,7 +3825,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of LUME fe signals </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00329">329</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00333">333</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3855,7 +3851,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of LUME time differences </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00332">332</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00336">336</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3881,7 +3877,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of LUME detectors </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00334">334</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00338">338</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3907,7 +3903,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of LUME ne signals </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00328">328</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00332">332</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3933,7 +3929,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of LUME time differences </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00331">331</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00335">335</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3959,7 +3955,7 @@ Private Attributes</h2></td></tr>
 
 <p>Log file for recording the results of the <a class="el" href="classISSEventBuilder.html" title="Builds physics events after all hits have been time sorted.">ISSEventBuilder</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00202">202</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00206">206</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -3985,7 +3981,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counts the number of LUME events within a given file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00354">354</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00358">358</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4011,7 +4007,7 @@ Private Attributes</h2></td></tr>
 
 <p>The LUME spectrum histogram. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00442">442</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00446">446</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4037,7 +4033,7 @@ Private Attributes</h2></td></tr>
 
 <p>Energy vs hit position for LUME. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00443">443</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00447">447</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4061,7 +4057,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00175">175</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00179">179</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4087,7 +4083,7 @@ Private Attributes</h2></td></tr>
 
 <p>Near-side energy vs far-side energy for LUME. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00444">444</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00448">448</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4113,7 +4109,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containing the Mesytec pulser period as a function of Mesytec pulser time for a given module. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00405">405</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00409">409</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4139,7 +4135,7 @@ Private Attributes</h2></td></tr>
 
 <p>Previous Mesytec pulser time in a given module. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00243">243</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00247">247</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4165,7 +4161,7 @@ Private Attributes</h2></td></tr>
 
 <p>TProfile counting the difference between the number of Mesytec pulser pulses and CAEN pulses as a function of Mesytec pulser time for a given module. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00404">404</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00408">408</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4191,7 +4187,7 @@ Private Attributes</h2></td></tr>
 
 <p>TProfile containing the time difference between Mesytec sync pulses as a function of Mesytec pulser time for a given module. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00406">406</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00410">410</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4217,7 +4213,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containing the time difference between Mesytec sync pulses and CAEN sync pulses for a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00401">401</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00405">405</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4243,7 +4239,7 @@ Private Attributes</h2></td></tr>
 
 <p>Mesytec pulser time in a given module. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00242">242</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00246">246</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4269,7 +4265,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counts the number of MWPC events within a given file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00350">350</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00354">354</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4293,7 +4289,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00171">171</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00175">175</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4319,7 +4315,7 @@ Private Attributes</h2></td></tr>
 
 <p>The TAC difference spectra in the MWPC. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00425">425</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00429">429</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4345,7 +4341,7 @@ Private Attributes</h2></td></tr>
 
 <p>The TAC differences for multiplicity-2 events. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00426">426</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00430">430</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4371,7 +4367,7 @@ Private Attributes</h2></td></tr>
 
 <p>The TAC singles spectra in the MWPC. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00424">424</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00428">428</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4397,7 +4393,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of axis IDs for the MWPC </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00308">308</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00312">312</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4423,7 +4419,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of TAC IDs for the MWPC </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00309">309</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00313">313</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4449,7 +4445,7 @@ Private Attributes</h2></td></tr>
 
 <p>TAC time from the MWPC. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00306">306</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00310">310</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4475,7 +4471,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of ELUM time differences for ELUMFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00307">307</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00311">311</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4501,7 +4497,7 @@ Private Attributes</h2></td></tr>
 
 <p>ASIC number. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00269">269</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00273">273</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4527,7 +4523,7 @@ Private Attributes</h2></td></tr>
 
 <p>absolute timestamp for CFD in simulation </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00261">261</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00265">265</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4553,7 +4549,7 @@ Private Attributes</h2></td></tr>
 
 <p>channel number </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00259">259</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00263">263</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4579,7 +4575,7 @@ Private Attributes</h2></td></tr>
 
 <p>signal clipped in firmware </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00266">266</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00270">270</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4605,7 +4601,7 @@ Private Attributes</h2></td></tr>
 
 <p>calibrated energy </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00262">262</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00266">266</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4631,7 +4627,7 @@ Private Attributes</h2></td></tr>
 
 <p>hit bit enabled? </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00273">273</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00277">277</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4657,7 +4653,7 @@ Private Attributes</h2></td></tr>
 
 <p>generic detector id </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00276">276</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00280">280</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4683,7 +4679,7 @@ Private Attributes</h2></td></tr>
 
 <p>2 layers for the dE-E, for example </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00278">278</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00282">282</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4709,7 +4705,7 @@ Private Attributes</h2></td></tr>
 
 <p>module number </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00258">258</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00262">262</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4735,7 +4731,7 @@ Private Attributes</h2></td></tr>
 
 <p>energy in overflow </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00265">265</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00269">269</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4761,7 +4757,7 @@ Private Attributes</h2></td></tr>
 
 <p>ring of the CD detector </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00280">280</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00284">284</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4787,7 +4783,7 @@ Private Attributes</h2></td></tr>
 
 <p>4 wafers along array, 2 dE-E, 13 for gas </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00271">271</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00275">275</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4813,7 +4809,7 @@ Private Attributes</h2></td></tr>
 
 <p>4 quadrants of the recoil, for example </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00277">277</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00281">281</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4839,7 +4835,7 @@ Private Attributes</h2></td></tr>
 
 <p>p-side = 0; n-side = 1 </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00270">270</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00274">274</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4865,7 +4861,7 @@ Private Attributes</h2></td></tr>
 
 <p>strip number for DSSSD </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00272">272</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00276">276</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4891,7 +4887,7 @@ Private Attributes</h2></td></tr>
 
 <p>above threshold? </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00264">264</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00268">268</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4917,7 +4913,7 @@ Private Attributes</h2></td></tr>
 
 <p>absolute timestamp </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00260">260</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00264">264</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4943,7 +4939,7 @@ Private Attributes</h2></td></tr>
 
 <p>type of detector (for LUME: be, ne, fe) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00279">279</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00283">283</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4969,7 +4965,7 @@ Private Attributes</h2></td></tr>
 
 <p>VME crate number. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00257">257</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00261">261</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -4995,7 +4991,7 @@ Private Attributes</h2></td></tr>
 
 <p>time walk correction </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00263">263</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00267">267</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5021,7 +5017,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counter for the number of asic data packets in a file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00356">356</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00360">360</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5047,7 +5043,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of asic pause signals in the time-sorted data input tree (indexed by module in the array) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00368">368</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00372">372</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5073,7 +5069,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of asic pulses in the time-sorted data input tree (indexed by module in the array) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00370">370</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00374">374</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5099,7 +5095,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of asic resume signals in the time-sorted data input tree (indexed by module in the array) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00369">369</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00373">373</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5125,7 +5121,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counter for number of caen data packets in a file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00357">357</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00361">361</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5151,7 +5147,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of caen pulser hits in the time-sorted data input tree. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00361">361</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00365">365</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5177,7 +5173,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of ebis pulses in the time-sorted data input tree. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00362">362</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00366">366</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5203,7 +5199,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of entries in the time-sorted data input tree. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00360">360</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00364">364</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5229,7 +5225,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of fpga pulses in the time-sorted data input tree (indexed by module in the array) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00367">367</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00371">371</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5255,7 +5251,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counter for number of info data packets in a file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00359">359</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00363">363</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5281,7 +5277,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of laser status pulses in the time-sorted data input tree. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00365">365</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00369">369</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5307,7 +5303,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counter for number of mesytec data packets in a file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00358">358</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00362">362</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5333,7 +5329,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of Mesytec sync pulses in the time-sorted data input tree (indexed by module in the array) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00366">366</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00370">370</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5359,7 +5355,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of SuperCycle pulses in the time-sorted data input tree. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00364">364</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00368">368</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5385,7 +5381,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of T1 pulses in the time-sorted data input tree. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00363">363</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00367">367</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5411,7 +5407,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of n-side energies for ParticleFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00285">285</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00289">289</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5437,7 +5433,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of n-side hit bit values </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00297">297</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00301">301</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5463,7 +5459,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of n-side strip ids </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00291">291</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00295">295</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5489,7 +5485,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of n-side modules numbers </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00293">293</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00297">297</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5515,7 +5511,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 1D histograms with n-side time differences. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00384">384</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00388">388</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5541,7 +5537,7 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the TTree in the simulation input file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00160">160</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00164">164</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5567,7 +5563,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of n-side row numbers </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00295">295</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00299">299</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5593,7 +5589,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of n-side time differences for ParticleFinder without time walk correction </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00287">287</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00291">291</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5619,7 +5615,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of n-side time differences for ParticleFinder WITH time walk correction </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00289">289</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00293">293</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5646,7 +5642,7 @@ Private Attributes</h2></td></tr>
 <p>Outputs. </p>
 <p>Pointer to the output ROOT file containing events </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00182">182</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00186">186</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5672,7 +5668,7 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the output ROOT tree containing events. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00183">183</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00187">187</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5698,7 +5694,7 @@ Private Attributes</h2></td></tr>
 
 <p>Boolean determining whether an energy calibration should be used (true) or not (false). Set in the <a class="el" href="#a84304ee1150316403e1cd5cf569488db">ISSEventBuilder::AddCalibration</a> function. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00188">188</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00192">192</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5724,7 +5720,7 @@ Private Attributes</h2></td></tr>
 
 <p>Boolean determining whether an settings should be used (true) or not (false). Set in the <a class="el" href="#a00a85e23d8ccf0d96342f24cdb677435">ISSEventBuilder::AddSettings</a> function. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00192">192</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00196">196</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5750,7 +5746,7 @@ Private Attributes</h2></td></tr>
 
 <p>The pause time on a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00248">248</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00252">252</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5776,7 +5772,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of p-side energies for ParticleFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00284">284</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00288">288</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5802,7 +5798,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of p-side hit bit values </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00296">296</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00300">300</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5828,7 +5824,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of p-side strip ids </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00290">290</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00294">294</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5854,7 +5850,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of p-side modules numbers </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00292">292</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00296">296</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5880,7 +5876,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms holding events with 1p and 1n hit. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00373">373</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00377">377</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5906,7 +5902,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms holding events with 1p and 2n hits. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00374">374</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00378">378</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5932,7 +5928,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms holding events with 2p and 1n hits. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00375">375</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00379">379</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5958,7 +5954,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms holding events with 2p and 2n hits. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00376">376</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00380">380</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -5984,7 +5980,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms with addback on p and n side. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00377">377</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00381">381</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6010,7 +6006,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms with p and n-side max energy. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00380">380</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00384">384</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6036,7 +6032,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms p-side vs n-side multiplicity. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00389">389</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00393">393</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6062,7 +6058,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms with p singles and n addback. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00378">378</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00382">382</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6088,7 +6084,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms with p addback and n singles. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00379">379</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00383">383</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6114,7 +6110,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 1D histograms with p vs n side time difference. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00381">381</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00385">385</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6140,7 +6136,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms pn-time difference vs n-side energy. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00386">386</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00390">390</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6166,7 +6162,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms pn-time difference vs n-side energy. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00388">388</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00392">392</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6192,7 +6188,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms pn-time difference vs p-side energy. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00385">385</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00389">389</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6218,7 +6214,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 2D histograms pn-time difference vs p-side energy. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00387">387</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00391">391</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6244,7 +6240,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 1D histograms with p-side time differences. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00382">382</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00386">386</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6270,7 +6266,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of vector of 1D histograms with p-side time differences. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00383">383</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00387">387</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6296,7 +6292,7 @@ Private Attributes</h2></td></tr>
 
 <p>Progress bar for the GUI. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00196">196</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00200">200</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6322,7 +6318,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of p-side row numbers </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00294">294</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00298">298</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6348,7 +6344,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of p-side time differences for ParticleFinder without time walk correction </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00286">286</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00290">290</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6374,7 +6370,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of p-side time differences for ParticleFinder WITH time walk correction </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00288">288</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00292">292</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6400,7 +6396,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counts the number of recoil events in the recoil detector within a given file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00349">349</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00353">353</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6426,7 +6422,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containing the single dE signals. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00419">419</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00423">423</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6452,7 +6448,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram for the recoil E+dE vs E (calibrated) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00416">416</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00420">420</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6478,7 +6474,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram calculating the time difference between E and dE signals. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00420">420</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00424">424</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6504,7 +6500,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containing the single E signals. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00418">418</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00422">422</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6530,7 +6526,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram for the recoil E-dE that are real (calibrated) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00415">415</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00419">419</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6556,7 +6552,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram for the recoil E-dE that are real (raw) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00417">417</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00421">421</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6580,7 +6576,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00170">170</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00174">174</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6606,7 +6602,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram for the recoil-recoil time differences as a function of layer number. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00421">421</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00425">425</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6632,7 +6628,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of recoil energies for RecoilFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00300">300</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00304">304</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6658,7 +6654,7 @@ Private Attributes</h2></td></tr>
 
 <p>The resume time on a given module of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00249">249</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00253">253</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6684,7 +6680,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of recoil IDs/layers for RecoilFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00302">302</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00306">306</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6710,7 +6706,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of recoil sectors for RecoilFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00303">303</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00307">307</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6736,7 +6732,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of recoil time differences for RecoilFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00301">301</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00305">305</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6762,7 +6758,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of ScintArray energies for GammaFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00322">322</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00326">326</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6788,7 +6784,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of ScintArray detectors ids for GammaFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00324">324</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00328">328</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6814,7 +6810,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of ScintArray time differences for GammaFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00323">323</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00327">327</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6840,7 +6836,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containg the period of SuperCycle pulses. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00397">397</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00401">401</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6866,7 +6862,7 @@ Private Attributes</h2></td></tr>
 
 <p>Holds time of previous SuperCycle pulse. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00238">238</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00242">242</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6892,7 +6888,7 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the settings object. Assigned in constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00191">191</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00195">195</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6918,7 +6914,7 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the TBranch containing the data in the NPTool input file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00162">162</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00166">166</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6944,7 +6940,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram of T1 - SuperCycle time to get the super cycle structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00399">399</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00403">403</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6970,7 +6966,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containg the period of T1 pulses. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00396">396</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00400">400</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -6996,7 +6992,7 @@ Private Attributes</h2></td></tr>
 
 <p>Holds time of previous T1 pulse. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00237">237</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00241">241</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7022,7 +7018,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containing the time difference between each real (not infodata) signal in the file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00392">392</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00396">396</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7048,7 +7044,7 @@ Private Attributes</h2></td></tr>
 
 <p>Histogram containing the time difference between the real signals <em>above threshold</em> (mythres) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00393">393</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00397">397</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7074,7 +7070,7 @@ Private Attributes</h2></td></tr>
 
 <p>Time difference between first hit in event and current hit. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00231">231</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00235">235</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7100,7 +7096,7 @@ Private Attributes</h2></td></tr>
 
 <p>Time of the first caen/asic/info event in a file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00235">235</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00239">239</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7126,7 +7122,7 @@ Private Attributes</h2></td></tr>
 
 <p>The maximum time in an event containing hits. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00234">234</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00238">238</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7152,7 +7148,7 @@ Private Attributes</h2></td></tr>
 
 <p>The minimum time in an event containing hits. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00233">233</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00237">237</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7178,7 +7174,7 @@ Private Attributes</h2></td></tr>
 
 <p>Holds time of previous event. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00232">232</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00236">236</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7204,7 +7200,7 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to a given entry in the tree of generic VME data from CAEN or Mesytec. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00164">164</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00168">168</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7230,7 +7226,7 @@ Private Attributes</h2></td></tr>
 
 <p>Holds the time of the first hit on each VME module in the input time-sorted tree (index denotes vme crate and module) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00253">253</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00257">257</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7256,7 +7252,7 @@ Private Attributes</h2></td></tr>
 
 <p>Holds the time of the last hit on each VME module in the input time-sorted tree (index denotes vme crate and module) </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00254">254</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00258">258</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7282,7 +7278,7 @@ Private Attributes</h2></td></tr>
 
 <p>Container for storing hits on all detectors in order to construct events. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00184">184</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00188">188</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7308,7 +7304,7 @@ Private Attributes</h2></td></tr>
 
 <p>Counts the number of zero-degree detector events within a given file. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00352">352</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00356">356</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7334,7 +7330,7 @@ Private Attributes</h2></td></tr>
 
 <p>The zero-degree detector histogram. </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00433">433</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00437">437</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7358,7 +7354,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00173">173</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00177">177</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7384,7 +7380,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of ZeroDegree energies for ELUMFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00317">317</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00321">321</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7410,7 +7406,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of ZeroDegree IDs/layers for ELUMFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00319">319</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00323">323</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
@@ -7436,7 +7432,7 @@ Private Attributes</h2></td></tr>
 
 <p>list of ZeroDegree time differences for ELUMFinder </p>
 
-<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00318">318</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EventBuilder_8hh_source.html#l00322">322</a> of file <a class="el" href="EventBuilder_8hh_source.html">EventBuilder.hh</a>.</p>
 
 </div>
 </div>
