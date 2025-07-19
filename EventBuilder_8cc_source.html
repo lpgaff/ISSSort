@@ -3665,21 +3665,21 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03586" name="l03586"></a><span class="lineno"> 3586</span> </div>
 <div class="line"><a id="l03587" name="l03587"></a><span class="lineno"> 3587</span>    }</div>
 <div class="line"><a id="l03588" name="l03588"></a><span class="lineno"> 3588</span> </div>
-<div class="line"><a id="l03589" name="l03589"></a><span class="lineno"> 3589</span> </div>
-<div class="line"><a id="l03590" name="l03590"></a><span class="lineno"> 3590</span>}</div>
-</div>
+<div class="line"><a id="l03589" name="l03589"></a><span class="lineno"> 3589</span>    <span class="comment">// Write once</span></div>
+<div class="line"><a id="l03590" name="l03590"></a><span class="lineno"> 3590</span>    <a class="code hl_variable" href="classISSEventBuilder.html#aa79a0f3b9b386d9c56bcea0cb330d658">output_file</a>-&gt;Write();</div>
 <div class="line"><a id="l03591" name="l03591"></a><span class="lineno"> 3591</span> </div>
-<div class="foldopen" id="foldopen03594" data-start="{" data-end="}">
-<div class="line"><a id="l03594" name="l03594"></a><span class="lineno"><a class="line" href="classISSEventBuilder.html#a2e542d2384ac1033a5062c15578aece5"> 3594</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classISSEventBuilder.html#a2e542d2384ac1033a5062c15578aece5">ISSEventBuilder::ResetHist</a>( TObject *obj ) {</div>
-<div class="line"><a id="l03595" name="l03595"></a><span class="lineno"> 3595</span> </div>
-<div class="line"><a id="l03596" name="l03596"></a><span class="lineno"> 3596</span>    <span class="keywordflow">if</span>( obj == <span class="keyword">nullptr</span> ) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l03592" name="l03592"></a><span class="lineno"> 3592</span>}</div>
+</div>
+<div class="line"><a id="l03593" name="l03593"></a><span class="lineno"> 3593</span> </div>
+<div class="foldopen" id="foldopen03596" data-start="{" data-end="}">
+<div class="line"><a id="l03596" name="l03596"></a><span class="lineno"><a class="line" href="classISSEventBuilder.html#a2e542d2384ac1033a5062c15578aece5"> 3596</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classISSEventBuilder.html#a2e542d2384ac1033a5062c15578aece5">ISSEventBuilder::ResetHist</a>( TObject *obj ) {</div>
 <div class="line"><a id="l03597" name="l03597"></a><span class="lineno"> 3597</span> </div>
-<div class="line"><a id="l03598" name="l03598"></a><span class="lineno"> 3598</span>    <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH1&quot;</span> ) )</div>
-<div class="line"><a id="l03599" name="l03599"></a><span class="lineno"> 3599</span>        ( (TH1*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
-<div class="line"><a id="l03600" name="l03600"></a><span class="lineno"> 3600</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH2&quot;</span> ) )</div>
-<div class="line"><a id="l03601" name="l03601"></a><span class="lineno"> 3601</span>        ( (TH2*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
-<div class="line"><a id="l03602" name="l03602"></a><span class="lineno"> 3602</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TProfile&quot;</span> ) )</div>
-<div class="line"><a id="l03603" name="l03603"></a><span class="lineno"> 3603</span>        ( (TProfile*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
+<div class="line"><a id="l03598" name="l03598"></a><span class="lineno"> 3598</span>    <span class="keywordflow">if</span>( obj == <span class="keyword">nullptr</span> ) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l03599" name="l03599"></a><span class="lineno"> 3599</span> </div>
+<div class="line"><a id="l03600" name="l03600"></a><span class="lineno"> 3600</span>    <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH1&quot;</span> ) )</div>
+<div class="line"><a id="l03601" name="l03601"></a><span class="lineno"> 3601</span>        ( (TH1*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
+<div class="line"><a id="l03602" name="l03602"></a><span class="lineno"> 3602</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH2&quot;</span> ) )</div>
+<div class="line"><a id="l03603" name="l03603"></a><span class="lineno"> 3603</span>        ( (TH2*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
 <div class="line"><a id="l03604" name="l03604"></a><span class="lineno"> 3604</span> </div>
 <div class="line"><a id="l03605" name="l03605"></a><span class="lineno"> 3605</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l03606" name="l03606"></a><span class="lineno"> 3606</span> </div>
@@ -3693,12 +3693,12 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03614" name="l03614"></a><span class="lineno"> 3614</span>    TIter keyList1( <a class="code hl_variable" href="classISSEventBuilder.html#aa79a0f3b9b386d9c56bcea0cb330d658">output_file</a>-&gt;GetListOfKeys() );</div>
 <div class="line"><a id="l03615" name="l03615"></a><span class="lineno"> 3615</span>    <span class="keywordflow">while</span>( ( key1 = (TKey*)keyList1() ) ){ <span class="comment">// level 1</span></div>
 <div class="line"><a id="l03616" name="l03616"></a><span class="lineno"> 3616</span> </div>
-<div class="line"><a id="l03617" name="l03617"></a><span class="lineno"> 3617</span>        <span class="keywordflow">if</span>( key1-&gt;InheritsFrom( <span class="stringliteral">&quot;TDirectory&quot;</span> ) ){</div>
+<div class="line"><a id="l03617" name="l03617"></a><span class="lineno"> 3617</span>        <span class="keywordflow">if</span>( key1-&gt;ReadObj()-&gt;InheritsFrom( <span class="stringliteral">&quot;TDirectory&quot;</span> ) ){</div>
 <div class="line"><a id="l03618" name="l03618"></a><span class="lineno"> 3618</span> </div>
 <div class="line"><a id="l03619" name="l03619"></a><span class="lineno"> 3619</span>            TIter keyList2( ( (TDirectory*)key1-&gt;ReadObj() )-&gt;GetListOfKeys() );</div>
 <div class="line"><a id="l03620" name="l03620"></a><span class="lineno"> 3620</span>            <span class="keywordflow">while</span>( ( key2 = (TKey*)keyList2() ) ){ <span class="comment">// level 2</span></div>
 <div class="line"><a id="l03621" name="l03621"></a><span class="lineno"> 3621</span> </div>
-<div class="line"><a id="l03622" name="l03622"></a><span class="lineno"> 3622</span>                <span class="keywordflow">if</span>( key1-&gt;InheritsFrom( <span class="stringliteral">&quot;TDirectory&quot;</span> ) ){</div>
+<div class="line"><a id="l03622" name="l03622"></a><span class="lineno"> 3622</span>                <span class="keywordflow">if</span>( key1-&gt;ReadObj()-&gt;InheritsFrom( <span class="stringliteral">&quot;TDirectory&quot;</span> ) ){</div>
 <div class="line"><a id="l03623" name="l03623"></a><span class="lineno"> 3623</span> </div>
 <div class="line"><a id="l03624" name="l03624"></a><span class="lineno"> 3624</span>                    TIter keyList3( ( (TDirectory*)key2-&gt;ReadObj() )-&gt;GetListOfKeys() );</div>
 <div class="line"><a id="l03625" name="l03625"></a><span class="lineno"> 3625</span>                    <span class="keywordflow">while</span>( ( key3 = (TKey*)keyList3() ) ) <span class="comment">// level 3</span></div>
@@ -3780,7 +3780,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclassISSEventBuilder_html_a2c422a9a06ffa5dc4f84e86fba60ad08"><div class="ttname"><a href="classISSEventBuilder.html#a2c422a9a06ffa5dc4f84e86fba60ad08">ISSEventBuilder::prow_list</a></div><div class="ttdeci">std::vector&lt; char &gt; prow_list</div><div class="ttdoc">list of p-side row numbers</div><div class="ttdef"><b>Definition</b> <a href="EventBuilder_8hh_source.html#l00298">EventBuilder.hh:298</a></div></div>
 <div class="ttc" id="aclassISSEventBuilder_html_a2d7607342720fb98f20a725c5b28bb50"><div class="ttname"><a href="classISSEventBuilder.html#a2d7607342720fb98f20a725c5b28bb50">ISSEventBuilder::saen_list</a></div><div class="ttdeci">std::vector&lt; float &gt; saen_list</div><div class="ttdoc">list of ScintArray energies for GammaFinder</div><div class="ttdef"><b>Definition</b> <a href="EventBuilder_8hh_source.html#l00326">EventBuilder.hh:326</a></div></div>
 <div class="ttc" id="aclassISSEventBuilder_html_a2d80160841614a7ca4a0177336d1183e"><div class="ttname"><a href="classISSEventBuilder.html#a2d80160841614a7ca4a0177336d1183e">ISSEventBuilder::pn_td_En</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; TH2F * &gt; &gt; pn_td_En</div><div class="ttdoc">Vector of vector of 2D histograms pn-time difference vs n-side energy.</div><div class="ttdef"><b>Definition</b> <a href="EventBuilder_8hh_source.html#l00390">EventBuilder.hh:390</a></div></div>
-<div class="ttc" id="aclassISSEventBuilder_html_a2e542d2384ac1033a5062c15578aece5"><div class="ttname"><a href="classISSEventBuilder.html#a2e542d2384ac1033a5062c15578aece5">ISSEventBuilder::ResetHist</a></div><div class="ttdeci">void ResetHist(TObject *obj)</div><div class="ttdoc">This function empties the histograms used in the EventBuilder class; used during the DataSpy.</div><div class="ttdef"><b>Definition</b> <a href="#l03594">EventBuilder.cc:3594</a></div></div>
+<div class="ttc" id="aclassISSEventBuilder_html_a2e542d2384ac1033a5062c15578aece5"><div class="ttname"><a href="classISSEventBuilder.html#a2e542d2384ac1033a5062c15578aece5">ISSEventBuilder::ResetHist</a></div><div class="ttdeci">void ResetHist(TObject *obj)</div><div class="ttdoc">This function empties the histograms used in the EventBuilder class; used during the DataSpy.</div><div class="ttdef"><b>Definition</b> <a href="#l03596">EventBuilder.cc:3596</a></div></div>
 <div class="ttc" id="aclassISSEventBuilder_html_a2f6f6992d704dbd713a2327e8de6c83f"><div class="ttname"><a href="classISSEventBuilder.html#a2f6f6992d704dbd713a2327e8de6c83f">ISSEventBuilder::overwrite_set</a></div><div class="ttdeci">bool overwrite_set</div><div class="ttdoc">Boolean determining whether an settings should be used (true) or not (false). Set in the ISSEventBuil...</div><div class="ttdef"><b>Definition</b> <a href="EventBuilder_8hh_source.html#l00196">EventBuilder.hh:196</a></div></div>
 <div class="ttc" id="aclassISSEventBuilder_html_a3301e0b2c8b9e43adc77eb91b44b42f7"><div class="ttname"><a href="classISSEventBuilder.html#a3301e0b2c8b9e43adc77eb91b44b42f7">ISSEventBuilder::set</a></div><div class="ttdeci">std::shared_ptr&lt; ISSSettings &gt; set</div><div class="ttdoc">Pointer to the settings object. Assigned in constructor.</div><div class="ttdef"><b>Definition</b> <a href="EventBuilder_8hh_source.html#l00195">EventBuilder.hh:195</a></div></div>
 <div class="ttc" id="aclassISSEventBuilder_html_a330ec87c0642170d4287f81128f91e8d"><div class="ttname"><a href="classISSEventBuilder.html#a330ec87c0642170d4287f81128f91e8d">ISSEventBuilder::mymod</a></div><div class="ttdeci">unsigned char mymod</div><div class="ttdoc">module number</div><div class="ttdef"><b>Definition</b> <a href="EventBuilder_8hh_source.html#l00262">EventBuilder.hh:262</a></div></div>

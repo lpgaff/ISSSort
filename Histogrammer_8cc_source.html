@@ -2356,21 +2356,21 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l02254" name="l02254"></a><span class="lineno"> 2254</span>    <span class="comment">// flag to denote that hists are ready (used for spy)</span></div>
 <div class="line"><a id="l02255" name="l02255"></a><span class="lineno"> 2255</span>    <a class="code hl_variable" href="classISSHistogrammer.html#ad806688e084a4bdee22b31a7a0812359">hists_ready</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l02256" name="l02256"></a><span class="lineno"> 2256</span> </div>
-<div class="line"><a id="l02257" name="l02257"></a><span class="lineno"> 2257</span> </div>
-<div class="line"><a id="l02258" name="l02258"></a><span class="lineno"> 2258</span>}</div>
-</div>
+<div class="line"><a id="l02257" name="l02257"></a><span class="lineno"> 2257</span>    <span class="comment">// Write once</span></div>
+<div class="line"><a id="l02258" name="l02258"></a><span class="lineno"> 2258</span>    <a class="code hl_variable" href="classISSHistogrammer.html#acc16d8a4d3d2bc134e6d3161eedfe650">output_file</a>-&gt;Write();</div>
 <div class="line"><a id="l02259" name="l02259"></a><span class="lineno"> 2259</span> </div>
-<div class="foldopen" id="foldopen02260" data-start="{" data-end="}">
-<div class="line"><a id="l02260" name="l02260"></a><span class="lineno"><a class="line" href="classISSHistogrammer.html#a3b2208b55b8d7e2f9e21b7109b1fdd8b"> 2260</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classISSHistogrammer.html#a3b2208b55b8d7e2f9e21b7109b1fdd8b">ISSHistogrammer::ResetHist</a>( TObject *obj ) {</div>
+<div class="line"><a id="l02260" name="l02260"></a><span class="lineno"> 2260</span>}</div>
+</div>
 <div class="line"><a id="l02261" name="l02261"></a><span class="lineno"> 2261</span> </div>
-<div class="line"><a id="l02262" name="l02262"></a><span class="lineno"> 2262</span>    <span class="keywordflow">if</span>( obj == <span class="keyword">nullptr</span> ) <span class="keywordflow">return</span>;</div>
+<div class="foldopen" id="foldopen02262" data-start="{" data-end="}">
+<div class="line"><a id="l02262" name="l02262"></a><span class="lineno"><a class="line" href="classISSHistogrammer.html#a3b2208b55b8d7e2f9e21b7109b1fdd8b"> 2262</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classISSHistogrammer.html#a3b2208b55b8d7e2f9e21b7109b1fdd8b">ISSHistogrammer::ResetHist</a>( TObject *obj ) {</div>
 <div class="line"><a id="l02263" name="l02263"></a><span class="lineno"> 2263</span> </div>
-<div class="line"><a id="l02264" name="l02264"></a><span class="lineno"> 2264</span>    <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH1&quot;</span> ) )</div>
-<div class="line"><a id="l02265" name="l02265"></a><span class="lineno"> 2265</span>        ( (TH1*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
-<div class="line"><a id="l02266" name="l02266"></a><span class="lineno"> 2266</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH2&quot;</span> ) )</div>
-<div class="line"><a id="l02267" name="l02267"></a><span class="lineno"> 2267</span>        ( (TH2*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
-<div class="line"><a id="l02268" name="l02268"></a><span class="lineno"> 2268</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TProfile&quot;</span> ) )</div>
-<div class="line"><a id="l02269" name="l02269"></a><span class="lineno"> 2269</span>        ( (TProfile*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
+<div class="line"><a id="l02264" name="l02264"></a><span class="lineno"> 2264</span>    <span class="keywordflow">if</span>( obj == <span class="keyword">nullptr</span> ) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l02265" name="l02265"></a><span class="lineno"> 2265</span> </div>
+<div class="line"><a id="l02266" name="l02266"></a><span class="lineno"> 2266</span>    <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH1&quot;</span> ) )</div>
+<div class="line"><a id="l02267" name="l02267"></a><span class="lineno"> 2267</span>        ( (TH1*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
+<div class="line"><a id="l02268" name="l02268"></a><span class="lineno"> 2268</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH2&quot;</span> ) )</div>
+<div class="line"><a id="l02269" name="l02269"></a><span class="lineno"> 2269</span>        ( (TH2*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
 <div class="line"><a id="l02270" name="l02270"></a><span class="lineno"> 2270</span> </div>
 <div class="line"><a id="l02271" name="l02271"></a><span class="lineno"> 2271</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l02272" name="l02272"></a><span class="lineno"> 2272</span> </div>
@@ -2384,12 +2384,12 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l02278" name="l02278"></a><span class="lineno"> 2278</span>    TIter keyList1( <a class="code hl_variable" href="classISSHistogrammer.html#acc16d8a4d3d2bc134e6d3161eedfe650">output_file</a>-&gt;GetListOfKeys() );</div>
 <div class="line"><a id="l02279" name="l02279"></a><span class="lineno"> 2279</span>    <span class="keywordflow">while</span>( ( key1 = (TKey*)keyList1() ) ){ <span class="comment">// level 1</span></div>
 <div class="line"><a id="l02280" name="l02280"></a><span class="lineno"> 2280</span> </div>
-<div class="line"><a id="l02281" name="l02281"></a><span class="lineno"> 2281</span>        <span class="keywordflow">if</span>( key1-&gt;InheritsFrom( <span class="stringliteral">&quot;TDirectory&quot;</span> ) ){</div>
+<div class="line"><a id="l02281" name="l02281"></a><span class="lineno"> 2281</span>        <span class="keywordflow">if</span>( key1-&gt;ReadObj()-&gt;InheritsFrom( <span class="stringliteral">&quot;TDirectory&quot;</span> ) ){</div>
 <div class="line"><a id="l02282" name="l02282"></a><span class="lineno"> 2282</span> </div>
 <div class="line"><a id="l02283" name="l02283"></a><span class="lineno"> 2283</span>            TIter keyList2( ( (TDirectory*)key1-&gt;ReadObj() )-&gt;GetListOfKeys() );</div>
 <div class="line"><a id="l02284" name="l02284"></a><span class="lineno"> 2284</span>            <span class="keywordflow">while</span>( ( key2 = (TKey*)keyList2() ) ){ <span class="comment">// level 2</span></div>
 <div class="line"><a id="l02285" name="l02285"></a><span class="lineno"> 2285</span> </div>
-<div class="line"><a id="l02286" name="l02286"></a><span class="lineno"> 2286</span>                <span class="keywordflow">if</span>( key1-&gt;InheritsFrom( <span class="stringliteral">&quot;TDirectory&quot;</span> ) ){</div>
+<div class="line"><a id="l02286" name="l02286"></a><span class="lineno"> 2286</span>                <span class="keywordflow">if</span>( key1-&gt;ReadObj()-&gt;InheritsFrom( <span class="stringliteral">&quot;TDirectory&quot;</span> ) ){</div>
 <div class="line"><a id="l02287" name="l02287"></a><span class="lineno"> 2287</span> </div>
 <div class="line"><a id="l02288" name="l02288"></a><span class="lineno"> 2288</span>                    TIter keyList3( ( (TDirectory*)key2-&gt;ReadObj() )-&gt;GetListOfKeys() );</div>
 <div class="line"><a id="l02289" name="l02289"></a><span class="lineno"> 2289</span>                    <span class="keywordflow">while</span>( ( key3 = (TKey*)keyList3() ) ) <span class="comment">// level 3</span></div>
@@ -4587,7 +4587,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclassISSHistogrammer_html_a39f7d39f7439da96117e372562338883"><div class="ttname"><a href="classISSHistogrammer.html#a39f7d39f7439da96117e372562338883">ISSHistogrammer::E_vs_theta_recoil</a></div><div class="ttdeci">TH2F * E_vs_theta_recoil</div><div class="ttdef"><b>Definition</b> <a href="Histogrammer_8hh_source.html#l00539">Histogrammer.hh:539</a></div></div>
 <div class="ttc" id="aclassISSHistogrammer_html_a3a5ec5196b75a5a2dead434dfeeef97e"><div class="ttname"><a href="classISSHistogrammer.html#a3a5ec5196b75a5a2dead434dfeeef97e">ISSHistogrammer::E_vs_z_fissionT_random_cut</a></div><div class="ttdeci">std::vector&lt; TH2F * &gt; E_vs_z_fissionT_random_cut</div><div class="ttdef"><b>Definition</b> <a href="Histogrammer_8hh_source.html#l00502">Histogrammer.hh:502</a></div></div>
 <div class="ttc" id="aclassISSHistogrammer_html_a3a86960d411ba1f12a56664af7ff7a4f"><div class="ttname"><a href="classISSHistogrammer.html#a3a86960d411ba1f12a56664af7ff7a4f">ISSHistogrammer::ebis_td_elum</a></div><div class="ttdeci">TH1F * ebis_td_elum</div><div class="ttdef"><b>Definition</b> <a href="Histogrammer_8hh_source.html#l00442">Histogrammer.hh:442</a></div></div>
-<div class="ttc" id="aclassISSHistogrammer_html_a3b2208b55b8d7e2f9e21b7109b1fdd8b"><div class="ttname"><a href="classISSHistogrammer.html#a3b2208b55b8d7e2f9e21b7109b1fdd8b">ISSHistogrammer::ResetHist</a></div><div class="ttdeci">void ResetHist(TObject *obj)</div><div class="ttdef"><b>Definition</b> <a href="#l02260">Histogrammer.cc:2260</a></div></div>
+<div class="ttc" id="aclassISSHistogrammer_html_a3b2208b55b8d7e2f9e21b7109b1fdd8b"><div class="ttname"><a href="classISSHistogrammer.html#a3b2208b55b8d7e2f9e21b7109b1fdd8b">ISSHistogrammer::ResetHist</a></div><div class="ttdeci">void ResetHist(TObject *obj)</div><div class="ttdef"><b>Definition</b> <a href="#l02262">Histogrammer.cc:2262</a></div></div>
 <div class="ttc" id="aclassISSHistogrammer_html_a3b8c6effc567ce0657c3f90547b4118d"><div class="ttname"><a href="classISSHistogrammer.html#a3b8c6effc567ce0657c3f90547b4118d">ISSHistogrammer::E_vs_theta_ebis_on_cut</a></div><div class="ttdeci">std::vector&lt; TH2F * &gt; E_vs_theta_ebis_on_cut</div><div class="ttdef"><b>Definition</b> <a href="Histogrammer_8hh_source.html#l00527">Histogrammer.hh:527</a></div></div>
 <div class="ttc" id="aclassISSHistogrammer_html_a3c7548b7a7a533e2277921b2aacf15d6"><div class="ttname"><a href="classISSHistogrammer.html#a3c7548b7a7a533e2277921b2aacf15d6">ISSHistogrammer::Ex_gammaT_random</a></div><div class="ttdeci">TH1F * Ex_gammaT_random</div><div class="ttdef"><b>Definition</b> <a href="Histogrammer_8hh_source.html#l00647">Histogrammer.hh:647</a></div></div>
 <div class="ttc" id="aclassISSHistogrammer_html_a3c9043c394ec474bbc0cb2516dc61347"><div class="ttname"><a href="classISSHistogrammer.html#a3c9043c394ec474bbc0cb2516dc61347">ISSHistogrammer::Ex_recoilT_random_mod</a></div><div class="ttdeci">std::vector&lt; TH1F * &gt; Ex_recoilT_random_mod</div><div class="ttdef"><b>Definition</b> <a href="Histogrammer_8hh_source.html#l00622">Histogrammer.hh:622</a></div></div>
