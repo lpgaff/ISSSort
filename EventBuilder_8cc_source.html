@@ -3666,7 +3666,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03587" name="l03587"></a><span class="lineno"> 3587</span>    }</div>
 <div class="line"><a id="l03588" name="l03588"></a><span class="lineno"> 3588</span> </div>
 <div class="line"><a id="l03589" name="l03589"></a><span class="lineno"> 3589</span>    <span class="comment">// Write once</span></div>
-<div class="line"><a id="l03590" name="l03590"></a><span class="lineno"> 3590</span>    <a class="code hl_variable" href="classISSEventBuilder.html#aa79a0f3b9b386d9c56bcea0cb330d658">output_file</a>-&gt;Write();</div>
+<div class="line"><a id="l03590" name="l03590"></a><span class="lineno"> 3590</span>    <span class="comment">//output_file-&gt;Write();</span></div>
 <div class="line"><a id="l03591" name="l03591"></a><span class="lineno"> 3591</span> </div>
 <div class="line"><a id="l03592" name="l03592"></a><span class="lineno"> 3592</span>}</div>
 </div>
@@ -3676,10 +3676,10 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03597" name="l03597"></a><span class="lineno"> 3597</span> </div>
 <div class="line"><a id="l03598" name="l03598"></a><span class="lineno"> 3598</span>    <span class="keywordflow">if</span>( obj == <span class="keyword">nullptr</span> ) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l03599" name="l03599"></a><span class="lineno"> 3599</span> </div>
-<div class="line"><a id="l03600" name="l03600"></a><span class="lineno"> 3600</span>    <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH1&quot;</span> ) )</div>
-<div class="line"><a id="l03601" name="l03601"></a><span class="lineno"> 3601</span>        ( (TH1*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
-<div class="line"><a id="l03602" name="l03602"></a><span class="lineno"> 3602</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH2&quot;</span> ) )</div>
-<div class="line"><a id="l03603" name="l03603"></a><span class="lineno"> 3603</span>        ( (TH2*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
+<div class="line"><a id="l03600" name="l03600"></a><span class="lineno"> 3600</span>    <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH2&quot;</span> ) )</div>
+<div class="line"><a id="l03601" name="l03601"></a><span class="lineno"> 3601</span>        ( (TH2*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
+<div class="line"><a id="l03602" name="l03602"></a><span class="lineno"> 3602</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( obj-&gt;InheritsFrom( <span class="stringliteral">&quot;TH1&quot;</span> ) )</div>
+<div class="line"><a id="l03603" name="l03603"></a><span class="lineno"> 3603</span>        ( (TH1*)obj )-&gt;Reset(<span class="stringliteral">&quot;ICESM&quot;</span>);</div>
 <div class="line"><a id="l03604" name="l03604"></a><span class="lineno"> 3604</span> </div>
 <div class="line"><a id="l03605" name="l03605"></a><span class="lineno"> 3605</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l03606" name="l03606"></a><span class="lineno"> 3606</span> </div>
@@ -3690,7 +3690,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03611" name="l03611"></a><span class="lineno"><a class="line" href="classISSEventBuilder.html#aa2368a3d7bdbcc01bc846a0a17604af5"> 3611</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classISSEventBuilder.html#aa2368a3d7bdbcc01bc846a0a17604af5">ISSEventBuilder::ResetHists</a>() {</div>
 <div class="line"><a id="l03612" name="l03612"></a><span class="lineno"> 3612</span> </div>
 <div class="line"><a id="l03613" name="l03613"></a><span class="lineno"> 3613</span>    TKey *key1, *key2, *key3;</div>
-<div class="line"><a id="l03614" name="l03614"></a><span class="lineno"> 3614</span>    TIter keyList1( <a class="code hl_variable" href="classISSEventBuilder.html#aa79a0f3b9b386d9c56bcea0cb330d658">output_file</a>-&gt;GetListOfKeys() );</div>
+<div class="line"><a id="l03614" name="l03614"></a><span class="lineno"> 3614</span>    TIter keyList1( gDirectory-&gt;GetListOfKeys() );</div>
 <div class="line"><a id="l03615" name="l03615"></a><span class="lineno"> 3615</span>    <span class="keywordflow">while</span>( ( key1 = (TKey*)keyList1() ) ){ <span class="comment">// level 1</span></div>
 <div class="line"><a id="l03616" name="l03616"></a><span class="lineno"> 3616</span> </div>
 <div class="line"><a id="l03617" name="l03617"></a><span class="lineno"> 3617</span>        <span class="keywordflow">if</span>( key1-&gt;ReadObj()-&gt;InheritsFrom( <span class="stringliteral">&quot;TDirectory&quot;</span> ) ){</div>
@@ -3698,7 +3698,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03619" name="l03619"></a><span class="lineno"> 3619</span>            TIter keyList2( ( (TDirectory*)key1-&gt;ReadObj() )-&gt;GetListOfKeys() );</div>
 <div class="line"><a id="l03620" name="l03620"></a><span class="lineno"> 3620</span>            <span class="keywordflow">while</span>( ( key2 = (TKey*)keyList2() ) ){ <span class="comment">// level 2</span></div>
 <div class="line"><a id="l03621" name="l03621"></a><span class="lineno"> 3621</span> </div>
-<div class="line"><a id="l03622" name="l03622"></a><span class="lineno"> 3622</span>                <span class="keywordflow">if</span>( key1-&gt;ReadObj()-&gt;InheritsFrom( <span class="stringliteral">&quot;TDirectory&quot;</span> ) ){</div>
+<div class="line"><a id="l03622" name="l03622"></a><span class="lineno"> 3622</span>                <span class="keywordflow">if</span>( key2-&gt;ReadObj()-&gt;InheritsFrom( <span class="stringliteral">&quot;TDirectory&quot;</span> ) ){</div>
 <div class="line"><a id="l03623" name="l03623"></a><span class="lineno"> 3623</span> </div>
 <div class="line"><a id="l03624" name="l03624"></a><span class="lineno"> 3624</span>                    TIter keyList3( ( (TDirectory*)key2-&gt;ReadObj() )-&gt;GetListOfKeys() );</div>
 <div class="line"><a id="l03625" name="l03625"></a><span class="lineno"> 3625</span>                    <span class="keywordflow">while</span>( ( key3 = (TKey*)keyList3() ) ) <span class="comment">// level 3</span></div>
