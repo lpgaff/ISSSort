@@ -2,7 +2,7 @@ var searchData=
 [
   ['plot_5fdead_5ftime_0',['plot_dead_time',['../plot__dead__time_8cc.html#ac0beb8570c3521bcb652908d4e6fa8b2',1,'plot_dead_time.cc']]],
   ['plot_5ffrom_5frxtree_1',['plot_from_rxtree',['../plot__from__rxtree_8cc.html#a84f9d154e8ad46123b4109bfbd5d17d4',1,'plot_from_rxtree.cc']]],
-  ['plotdiagnostics_2',['PlotDiagnostics',['../classISSEventBuilder.html#a13d40f580d5d060fbd8b9b4d280a27dd',1,'ISSEventBuilder::PlotDiagnostics()'],['../MonitorMacros_8hh.html#af4cecf3187e3492faf1f6f391019de81',1,'PlotDiagnostics():&#160;MonitorMacros.hh']]],
+  ['plotdiagnostics_2',['PlotDiagnostics',['../classISSEventBuilder.html#a13d40f580d5d060fbd8b9b4d280a27dd',1,'ISSEventBuilder']]],
   ['printcalibration_3',['PrintCalibration',['../classISSCalibration.html#a32699bf96f42770059626340428d5e9b',1,'ISSCalibration']]],
   ['printfitwarning_4',['PrintFitWarning',['../classISSAutoCalibrator.html#a8ceaf10722cae3a27cc4609ac062c63e',1,'ISSAutoCalibrator']]],
   ['printsettings_5',['PrintSettings',['../classISSSettings.html#a644730515969ef2adfbeb99de598b535',1,'ISSSettings']]],

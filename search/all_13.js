@@ -21,7 +21,7 @@ var searchData=
   ['plot_5fdead_5ftime_2ecc_18',['plot_dead_time.cc',['../plot__dead__time_8cc.html',1,'']]],
   ['plot_5ffrom_5frxtree_19',['plot_from_rxtree',['../plot__from__rxtree_8cc.html#a84f9d154e8ad46123b4109bfbd5d17d4',1,'plot_from_rxtree.cc']]],
   ['plot_5ffrom_5frxtree_2ecc_20',['plot_from_rxtree.cc',['../plot__from__rxtree_8cc.html',1,'']]],
-  ['plotdiagnostics_21',['PlotDiagnostics',['../classISSEventBuilder.html#a13d40f580d5d060fbd8b9b4d280a27dd',1,'ISSEventBuilder::PlotDiagnostics()'],['../MonitorMacros_8hh.html#af4cecf3187e3492faf1f6f391019de81',1,'PlotDiagnostics():&#160;MonitorMacros.hh']]],
+  ['plotdiagnostics_21',['PlotDiagnostics',['../classISSEventBuilder.html#a13d40f580d5d060fbd8b9b4d280a27dd',1,'ISSEventBuilder']]],
   ['pmod_5flist_22',['pmod_list',['../classISSEventBuilder.html#a7e07f87ac2bfd6feae5b965c92c0f30d',1,'ISSEventBuilder']]],
   ['pn_5f11_23',['pn_11',['../classISSEventBuilder.html#a59ee9c1a811609c6bd059e5a0b70a38d',1,'ISSEventBuilder']]],
   ['pn_5f12_24',['pn_12',['../classISSEventBuilder.html#a80d4190f45979ea11c4d029db0f29834',1,'ISSEventBuilder']]],
