@@ -88,7 +88,7 @@ var searchData=
   ['fissioncuthname_85',['fissioncutHname',['../classISSReaction.html#aa08f8ed8fb712053d3751b16636c7a3d',1,'ISSReaction']]],
   ['fissioncutlfile_86',['fissioncutLfile',['../classISSReaction.html#aeeb7535bbd2b660cbbedc20245af90fa',1,'ISSReaction']]],
   ['fissioncutlname_87',['fissioncutLname',['../classISSReaction.html#a41bf1d8e01d37348c7c2ea3460e869da',1,'ISSReaction']]],
-  ['flag_5falive_88',['flag_alive',['../iss__sort_8cc.html#a5328d2378558c01ec007e61a8e0d100c',1,'iss_sort.cc']]],
+  ['flag_5falive_88',['flag_alive',['../structthptr.html#aee388b2cfebeafb702c523e88ba84494',1,'thptr::flag_alive'],['../iss__sort_8cc.html#a5328d2378558c01ec007e61a8e0d100c',1,'flag_alive:&#160;iss_sort.cc']]],
   ['flag_5fasic_5fdata_89',['flag_asic_data',['../classISSConverter.html#ab6ace998484d4dcb498492a869f778e1',1,'ISSConverter']]],
   ['flag_5fasic_5fonly_90',['flag_asic_only',['../classISSSettings.html#ac8c70faf0cbbb637064b8cb71c6ff783',1,'ISSSettings']]],
   ['flag_5fautocal_91',['flag_autocal',['../classISSGUI.html#a7fce60df4904295feb4ec7fe9a1b5c7d',1,'ISSGUI::flag_autocal'],['../iss__sort_8cc.html#adf35380934191656865ce6b2e87a075f',1,'flag_autocal:&#160;iss_sort.cc']]],
