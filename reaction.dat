@@ -46,7 +46,7 @@
 #ELUM.Deadlayer: 0.0004		# Dead layer on surface of the ELUM in mm of Al (0.4 µm from data sheets)
 
 
-# Recoil detector type
+## Recoil detector type
 # Recoil.Type: 0			# type = 0 for normal recoil detector events with sector readout (QQQ1 or S14)
 							# type = 1 for using the CD detector events from the fission setup to apply recoil gates
 
@@ -119,8 +119,8 @@
 #GammaGamma_RandomTime.Max: 1200
 
 ## Recoil cut files
-# For the normal recoil detector (Recoill.Type = 1), you need to give a cut file for each sector
-# For the Fission CD setup, you just need to give information for RecoilCut_0 and it applies to all sectors
+## For the normal recoil detector (Recoill.Type = 1), you need to give a cut file for each sector
+## For the Fission CD setup, you just need to give information for RecoilCut_0 and it applies to all sectors
 #RecoilCut_0.File: NULL	# ROOT file containing the 2D recoil energy cut for sector 0
 #RecoilCut_0.Name: CUTG	# name of the TCutG object inside the ROOT file for sector 0
 #RecoilCut_1.File: NULL	# sector 1

@@ -97,9 +97,9 @@
 #CDHitWindow.DD: 500 # in ns. Default is 500 ns (detector-detector combinations)
 
 
-#-----------------#
-# Event rejection #
-#-----------------#
+##-----------------#
+## Event rejection #
+##-----------------#
 #ClippedRejection: true		# reject if a signal is marked as clipped by the firmware
 #OverflowRejection: true	# reject if the energy is in the overflow
 
