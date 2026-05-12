@@ -1591,6 +1591,7 @@ void ISSHistogrammer::MakeHists() {
 		recoil_EdE_cut.resize( set->GetNumberOfRecoilSectors() );
 		recoil_EdE_array.resize( set->GetNumberOfRecoilSectors() );
 		recoil_bragg.resize( set->GetNumberOfRecoilSectors() );
+		recoil_bragg_gated.resize( set->GetNumberOfRecoilSectors() );
 		recoil_dE_vs_T1.resize( set->GetNumberOfRecoilSectors() );
 		recoil_dE_eloss.resize( set->GetNumberOfRecoilSectors() );
 		recoil_E_eloss.resize( set->GetNumberOfRecoilSectors() );
@@ -1630,6 +1631,13 @@ void ISSHistogrammer::MakeHists() {
 			recoil_bragg[i] = new TH2F( hname.data(), htitle.data(),
 									   set->GetNumberOfRecoilLayers(), -0.5, set->GetNumberOfRecoilLayers()-0.5,
 									   react->HistRecoilBins(),react->HistRecoilMin(), react->HistRecoilMax() );
+
+			hname = "recoil_bragg_gated_sec" + std::to_string(i);
+			htitle = "Recoil Bragg plot for sector " + std::to_string(i);
+			htitle += " gated by recoil energy;Bragg ID;Energy loss, dE [keV];Counts";
+			recoil_bragg_gated[i] = new TH2F( hname.data(), htitle.data(),
+											 set->GetNumberOfRecoilLayers(), -0.5, set->GetNumberOfRecoilLayers() - 0.5,
+											 react->HistRecoilBins(),react->HistRecoilMin(), react->HistRecoilMax() );
 
 			hname = "recoil_dE_vs_T1_sec" + std::to_string(i);
 			htitle = "Recoil dE plot versus T1 time for sector " + std::to_string(i);
@@ -2267,6 +2275,14 @@ void ISSHistogrammer::MakeHists() {
 	mult_gamma_recoil = new TH2F( "mult_gamma_recoil", "Multiplicity map;Recoil multiplicity;Gamma-ray multiplicity;Counts",
 								  20, -0.5, 19.5, 20, -0.5, 19.5 );
 
+	if ( !react->IsFission() ) {
+		dirname = "MWPCDetector";
+		output_file->mkdir( dirname.data() );
+		output_file->cd( dirname.data() );
+		mwpc_pos_cal_gated_map = new TH2F( "mwpc_pos_cal_gated_map", "Calibrated MWPC position map, gated on the TAC sum;X position [mm];Y position [mm];Counts",
+										   700, -35., 35., 700, -35., 35. );
+	}
+
 }
 
 
@@ -2426,6 +2442,9 @@ void ISSHistogrammer::ResetHists() {
 		for( unsigned int i = 0; i < recoil_bragg.size(); ++i )
 			recoil_bragg[i]->Reset("ICESM");
 
+		for( unsigned int i = 0; i < recoil_bragg_gated.size(); ++i )
+			recoil_bragg_gated[i]->Reset("ICESM");
+
 		for( unsigned int i = 0; i < recoil_dE_vs_T1.size(); ++i )
 			recoil_dE_vs_T1[i]->Reset("ICESM");
 
@@ -2434,6 +2453,8 @@ void ISSHistogrammer::ResetHists() {
 
 		for( unsigned int i = 0; i < recoil_E_eloss.size(); ++i )
 			recoil_E_eloss[i]->Reset("ICESM");
+
+		mwpc_pos_cal_gated_map->Reset("ICESM");
 
 	}
 
@@ -4601,9 +4622,12 @@ unsigned long ISSHistogrammer::FillHists() {
 					recoil_bragg[recoil_evt->GetSector()]->Fill( recoil_evt->GetID(k), recoil_evt->GetEnergy(k) );
 
 				// Energy EdE plot, after cut
-				if( RecoilCut( recoil_evt ) )
+				if( RecoilCut( recoil_evt ) ) {
 					recoil_EdE_cut[recoil_evt->GetSector()]->Fill( recoil_evt->GetEnergyRest( set->GetRecoilEnergyRestStart(), set->GetRecoilEnergyRestStop() ),
 																  recoil_evt->GetEnergyLoss( set->GetRecoilEnergyLossStart(), set->GetRecoilEnergyLossStop() ) );
+					for( unsigned int k = 0; k < recoil_evt->GetEnergies().size(); ++k )
+						recoil_bragg_gated[recoil_evt->GetSector()]->Fill( recoil_evt->GetID(k), recoil_evt->GetEnergy(k) );
+				}
 
 				recoil_dE_eloss[recoil_evt->GetSector()]->Fill( recoil_evt->GetEnergyLoss( set->GetRecoilEnergyLossStart(), set->GetRecoilEnergyLossStop() ) );
 				recoil_E_eloss[recoil_evt->GetSector()]->Fill( recoil_evt->GetEnergyRest( set->GetRecoilEnergyRestStart(), set->GetRecoilEnergyRestStop() ) );
@@ -4961,6 +4985,36 @@ unsigned long ISSHistogrammer::FillHists() {
 
 		} // gamma hists enabled
 
+		// MWPC position calibration map gated by the summed TAC values
+		// Check Multiplicity
+		if( read_evts->GetMwpcMultiplicity() == 2 ) {
+
+			// Skip if they are in the same axis, weird events
+			if( read_evts->GetMwpcEvt(0)->GetAxis() != read_evts->GetMwpcEvt(1)->GetAxis() ) {
+
+				// Check the TAC sum gate
+				if( MwpcTacSumCut( read_evts->GetMwpcEvt(0) ) && MwpcTacSumCut( read_evts->GetMwpcEvt(1) ) ) {
+
+					// Check the orientation
+					if( read_evts->GetMwpcEvt(0)->GetAxis() == 1 ) {
+
+						mwpc_pos_cal_gated_map->Fill( read_evts->GetMwpcEvt(0)->GetPosition(),
+													read_evts->GetMwpcEvt(1)->GetPosition() );
+
+					}
+
+					else {
+
+						mwpc_pos_cal_gated_map->Fill( read_evts->GetMwpcEvt(1)->GetPosition(),
+													read_evts->GetMwpcEvt(0)->GetPosition() );
+
+					} // orientation
+				
+				} //TAC sum gate
+
+			} // not same axis
+
+		} // multiplicity 2
 
 		// Progress bar
 		bool update_progress = false;

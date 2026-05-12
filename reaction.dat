@@ -127,9 +127,17 @@
 #GammaGamma_RandomTime.Max: 1200
 #GammaGamma_FillRatio: 1           # Default is ratio of time windows
 
-## Recoil cut files
-## For the normal recoil detector (Recoill.Type = 1), you need to give a cut file for each sector
+## MWPC TAC sum gate
+#MWPC_axis_0_TAC_sum.Min: 
+#MWPC_axis_0_TAC_sum.Max:
+#MWPC_axis_1_TAC_sum.Min: 
+#MWPC_axis_1_TAC_sum.Max: 
+
+## Recoil cut options
+## For the normal recoil detector (Recoil.Type = 1), you need to give a cut file for each sector (RecoilCut.Graphical = true)
+## or define a 1D gate on a particular segment of the detector (RecoilCut.Graphical = false); The latter is only applicable for the Bragg chamber
 ## For the Fission CD setup, you just need to give information for RecoilCut_0 and it applies to all sectors
+#RecoilCut.Graphical: true
 #RecoilCut_0.File: NULL	# ROOT file containing the 2D recoil energy cut for sector 0
 #RecoilCut_0.Name: CUTG	# name of the TCutG object inside the ROOT file for sector 0
 #RecoilCut_1.File: NULL	# sector 1
@@ -138,6 +146,9 @@
 #RecoilCut_2.Name: CUTG	# sector 2
 #RecoilCut_3.File: NULL	# sector 3
 #RecoilCut_3.Name: CUTG	# sector 3
+#RecoilCut.Segment: 0
+#RecoilCutEnergy.Min: 0
+#RecoilCutEnergy.Max: 100000
 
 ## Fission cut files
 #FissionCut.Heavy.File: NULL

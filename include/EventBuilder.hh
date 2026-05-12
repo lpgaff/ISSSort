@@ -425,7 +425,8 @@ private:
 	// MWPC histograms
 	std::vector<std::vector<TH1F*>> mwpc_tac_axis; ///< The TAC singles spectra in the MWPC
 	std::vector<TH1F*> mwpc_hit_axis; ///< The TAC difference spectra in the MWPC
-	TH2F *mwpc_pos_mm, *mwpc_pos_raw; ///< The TAC differences for multiplicity-2 events
+	std::vector<TH1F*> mwpc_tac_sum_axis; ///< The TAC sum spectra in the MWPC (can be used to remove noise)
+	TH2F *mwpc_pos_cal, *mwpc_pos_raw; ///< The TAC differences for multiplicity-2 events
 
 	// ELUM histograms
 	TH1F *elum_E; ///< The elum spectrum histogram

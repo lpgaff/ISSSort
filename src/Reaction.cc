@@ -621,13 +621,25 @@ void ISSReaction::ReadReaction() {
 	recoil_cut.resize( nrecoilcuts );
 	recoilcutfile.resize( nrecoilcuts );
 	recoilcutname.resize( nrecoilcuts );
-	for( unsigned int i = 0; i < nrecoilcuts; ++i ) {
 
-		recoilcutfile.at(i) = config->GetValue( Form( "RecoilCut_%d.File", i ), "NULL" );
-		recoilcutname.at(i) = config->GetValue( Form( "RecoilCut_%d.Name", i ), "CUTG" );
+	recoil_cut_graphical = config->GetValue( "RecoilCut.Graphical", true ); // True for a graphical cut, false for a cut on the segment of the Bragg chamber
 
-		recoil_cut[i] = ReadCutFile(recoilcutfile.at(i), recoilcutname.at(i));
+	if( recoil_cut_graphical ) {
 
+		for( unsigned int i = 0; i < nrecoilcuts; ++i ) {
+
+			recoilcutfile.at(i) = config->GetValue( Form( "RecoilCut_%d.File", i ), "NULL" );
+			recoilcutname.at(i) = config->GetValue( Form( "RecoilCut_%d.Name", i ), "CUTG" );
+
+			recoil_cut[i] = ReadCutFile(recoilcutfile.at(i), recoilcutname.at(i));
+
+		}
+	}
+	
+	else {
+		recoil_energy_cut[0] = config->GetValue( "RecoilCutEnergy.Segment", 0 );
+		recoil_energy_cut[1] = config->GetValue( "RecoilCutEnergy.Min", 0.0 );
+		recoil_energy_cut[2] = config->GetValue( "RecoilCutEnergy.Max", 100000.0 );
 	}
 
 	// Get E versus z cuts
@@ -670,9 +682,9 @@ void ISSReaction::ReadReaction() {
 	hist_nbins_elab = config->GetValue( "Hists.Elab.Bins", 800 );				// number of bins in Elab histograms
 	hist_range_elab[0] = config->GetValue( "Hists.Elab.Min", 0.0 );				// lower limit for Elab histograms
 	hist_range_elab[1] = config->GetValue( "Hists.Elab.Max", 16000.0 );			// upper limit for Elab histograms
-	hist_nbins_recoil = config->GetValue( "Hists.Recoil.Bins", 4000 );			// number of bins in Recoil histograms
+	hist_nbins_recoil = config->GetValue( "Hists.Recoil.Bins", 3000 );			// number of bins in Recoil histograms
 	hist_range_recoil[0] = config->GetValue( "Hists.Recoil.Min", 0.0 );			// lower limit for Recoil histograms
-	hist_range_recoil[1] = config->GetValue( "Hists.Recoil.Max", 80e3 );		// upper limit for Recoil histograms
+	hist_range_recoil[1] = config->GetValue( "Hists.Recoil.Max", 150e3 );		// upper limit for Recoil histograms
 	hist_nbins_gamma = config->GetValue( "Hists.GammaRays.Bins", 2000 );		// number of bins in gamma-ray histograms
 	hist_range_gamma[0] = config->GetValue( "Hists.GammaRays.Min", 0.0 );		// lower limit for gamma-ray histograms
 	hist_range_gamma[1] = config->GetValue( "Hists.GammaRays.Max", 4000.0 );	// upper limit for gamma-ray histograms
@@ -762,7 +774,7 @@ void ISSReaction::ReadReaction() {
 	gamma_gamma_random[1] = config->GetValue( "GammaGamma_RandomTime.Max", 1200.0 );	// upper limit for gamma-gamma random time difference
 
 	// Gamma-Gamma fill ratios
-	gamma_gamma_ratio = config->GetValue( "GammaGamma_FillRatio", GetFissionFissionTimeRatio() );
+	gamma_gamma_ratio = config->GetValue( "GammaGamma_FillRatio", GetGammaGammaTimeRatio() );
 
 	// Gamma-ray energy cut
 	gamma_energy_cut[0] = config->GetValue( "GammaCut_Energy.Min", 0.0 );	// lower limit of the gamma-ray energy for gating spectra (0 keV)
@@ -778,6 +790,12 @@ void ISSReaction::ReadReaction() {
 	elum_rin  		= config->GetValue( "ELUM.InnerRadius", 24.0 ); // units of mm
 	elum_rout 		= config->GetValue( "ELUM.OuterRadius", 48.0 ); // units of mm
 	elum_deadlayer	= config->GetValue( "ELUM.Deadlayer", 0.00095 ); // units of mm of Si equivalent
+
+	// MWPC TAC gates
+	for ( unsigned int i = 0; i < 2; ++i ) {
+		mwpc_tac_sum_window[2 * i] = config->GetValue( ( "MWPC_axis_" + std::to_string(i) + "_TAC_sum.Min" ).c_str(), 0.0 );
+		mwpc_tac_sum_window[2 * i + 1] = config->GetValue( ( "MWPC_axis_" + std::to_string(i) + "_TAC_sum.Max" ).c_str(), 131072.0 );
+	}
 
 	// If it's a source run, we can ignore most of that
 	// or better still, initialise everything and overwrite what we need

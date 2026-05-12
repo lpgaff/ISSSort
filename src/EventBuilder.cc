@@ -2502,22 +2502,22 @@ void ISSEventBuilder::MwpcFinder() {
 	// Checks to prevent re-using events
 	std::vector<unsigned int> index;
 	int tac_diff_raw;
+	int tac_sum_raw;
 	float tac_diff_mm;
 
 	// Loop over MWPC events
 	for( unsigned int i = 0; i < mwpctac_list.size(); ++i ) {
 
 		// TAC singles spectra
-		mwpc_tac_axis[mwpcaxis_list[i]][mwpcid_list[i]]->Fill( mwpctac_list[i] );
+		mwpc_tac_axis[mwpcaxis_list[i]][mwpcid_list[i]]->Fill( mwpctac_raw_list[i] );
 
 		// Get first TAC of the axis
 		if( mwpcid_list[i] == 0 ){
-
 			// Look for matching pair
 			for( unsigned int j = 0; j < mwpctac_list.size(); ++j ) {
 
 				// Skip itself
-				if( i != j ) continue;
+				if( i == j ) continue;
 
 				// Check if we already used this hit
 				if( std::find( index.begin(), index.end(), j ) != index.end() )
@@ -2525,14 +2525,14 @@ void ISSEventBuilder::MwpcFinder() {
 
 				// Found a match
 				if( mwpcid_list[j] == 1 && mwpcaxis_list[i] == mwpcaxis_list[j] ){
-
 					index.push_back(j);
-					tac_diff_mm = (int)mwpctac_list[i] - (int)mwpctac_list[j];
+					tac_diff_mm = mwpctac_list[i] - mwpctac_list[j];
 					tac_diff_raw = (int)mwpctac_raw_list[i] - (int)mwpctac_raw_list[j];
-					mwpc_evt->SetEvent( tac_diff_raw, tac_diff_mm, mwpcaxis_list[i], mwpctd_list[i] );
-
+					tac_sum_raw = (int)mwpctac_raw_list[i] + (int)mwpctac_raw_list[j];
+					mwpc_evt->SetEvent( tac_diff_raw, tac_sum_raw, tac_diff_mm, mwpcaxis_list[i], mwpctd_list[i] );
 					// MWPC profiles, i.e TAC difference spectra
 					mwpc_hit_axis[mwpcaxis_list[i]]->Fill( tac_diff_raw );
+					mwpc_tac_sum_axis[mwpcaxis_list[i]]->Fill( tac_sum_raw );
 
 					// Write event to tree
 					write_evts->AddEvt( mwpc_evt );
@@ -2561,7 +2561,7 @@ void ISSEventBuilder::MwpcFinder() {
 				mwpc_pos_raw->Fill( write_evts->GetMwpcEvt(0)->GetTacDiff(),
 							   write_evts->GetMwpcEvt(1)->GetTacDiff() );
 
-				mwpc_pos_mm->Fill( write_evts->GetMwpcEvt(0)->GetPosition(),
+				mwpc_pos_cal->Fill( write_evts->GetMwpcEvt(0)->GetPosition(),
 							   write_evts->GetMwpcEvt(1)->GetPosition() );
 
 			}
@@ -2571,7 +2571,7 @@ void ISSEventBuilder::MwpcFinder() {
 				mwpc_pos_raw->Fill( write_evts->GetMwpcEvt(1)->GetTacDiff(),
 							   write_evts->GetMwpcEvt(0)->GetTacDiff() );
 
-				mwpc_pos_mm->Fill( write_evts->GetMwpcEvt(1)->GetPosition(),
+				mwpc_pos_cal->Fill( write_evts->GetMwpcEvt(1)->GetPosition(),
 							   write_evts->GetMwpcEvt(0)->GetPosition() );
 
 			} // orientation
@@ -3416,19 +3416,24 @@ void ISSEventBuilder::MakeHists(){
 
 	mwpc_tac_axis.resize( set->GetNumberOfMWPCAxes() );
 	mwpc_hit_axis.resize( set->GetNumberOfMWPCAxes() );
+	mwpc_tac_sum_axis.resize( set->GetNumberOfMWPCAxes() );
 
 	// Loop over number of recoil sectors
 	for( unsigned int i = 0; i < set->GetNumberOfMWPCAxes(); ++i ) {
 
 		hname = "mwpc_hit_axis" + std::to_string(i);
-		htitle = "MWPC TAC difference for axis " + std::to_string(i) + ";TAC difference;Counts";
+		htitle = "MWPC TAC difference for axis " + std::to_string(i) + ";TAC difference [ arb. units ];Counts";
 		mwpc_hit_axis[i] = new TH1F( hname.data(), htitle.data(), 8192, -65536, 65536 );
+
+		hname = "mwpc_tac_sum_axis" + std::to_string(i);
+		htitle = "MWPC TAC sum for axis " + std::to_string(i) + ";TAC sum [ arb. units ];Counts";
+		mwpc_tac_sum_axis[i] = new TH1F( hname.data(), htitle.data(), 4096, 0, 131072 );
 
 		mwpc_tac_axis[i].resize( 2 );
 		for( unsigned int j = 0; j < 2; ++j ) {
 
 			hname = "mwpc_tac" + std::to_string(j) + "_axis" + std::to_string(i);
-			htitle = "MWPC TAC" + std::to_string(j) + " time for axis " + std::to_string(i) + ";TAC time;Counts";
+			htitle = "MWPC TAC" + std::to_string(j) + " time for axis " + std::to_string(i) + ";TAC time [ arb. units ];Counts";
 			mwpc_tac_axis[i][j] = new TH1F( hname.data(), htitle.data(), 65536, 0, 65536 );
 
 		}
@@ -3439,9 +3444,9 @@ void ISSEventBuilder::MakeHists(){
 	htitle = "MWPC x-y TAC difference;x [arb. units];y [arb. units];Counts";
 	mwpc_pos_raw = new TH2F( hname.data(), htitle.data(), 2048, -65536, 65536, 2048, -65536, 65536 );
 
-	hname = "mwpc_pos_mm";
+	hname = "mwpc_pos_cal";
 	htitle = "MWPC x-y TAC difference;x [mm];y [mm];Counts";
-	mwpc_pos_mm = new TH2F( hname.data(), htitle.data(), 2000, -200, 200, 2000, -200, 200 );
+	mwpc_pos_cal = new TH2F( hname.data(), htitle.data(), 700, -35, 35, 700, -35, 35 ); // the MWPC is 70 mm x 70 mm, but the beam is usually much smaller
 
 
 	// ---------------- //
@@ -3758,7 +3763,10 @@ void ISSEventBuilder::ResetHists() {
 	for( unsigned int i = 0; i < mwpc_hit_axis.size(); i++ )
 		mwpc_hit_axis[i]->Reset("ICESM");
 
-	mwpc_pos_mm->Reset("ICESM");
+	for( unsigned int i = 0; i < mwpc_tac_sum_axis.size(); i++ )
+		mwpc_tac_sum_axis[i]->Reset("ICESM");
+
+	mwpc_pos_cal->Reset("ICESM");
 	mwpc_pos_raw->Reset("ICESM");
 	elum_E->Reset("ICESM");
 	elum_E_vs_sec->Reset("ICESM");

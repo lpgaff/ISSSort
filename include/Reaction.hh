@@ -202,6 +202,7 @@ public:
 	// Getters
 	inline bool   		IsFission(){ return fission; }; ///< returns true/false if we are studying fission of the recoiling nucleus
 	inline unsigned int RecoilType(){ return recoil_evt_type; };
+	inline bool  		CheckIfGraphicalRecoilCut(){ return recoil_cut_graphical; }; ///< returns true/false if we are applying a graphical cut to the recoil or just an energy cut
 
 	inline double GetField(){ return Mfield; };///< Getter for the magnetic field strength
 	inline double GetField_corr(){ return Mfield*T_to_mm; };///< Calculates magnetic field strength in MeV/ e*mm*c
@@ -483,6 +484,11 @@ public:
 		return gamma_gamma_ratio;
 	};///< Getter for gamma-gamma fill ratio (unused?)
 
+	// MWPC Time difference
+	inline double GetMwpcTacSumWindow( unsigned char i ){
+		return mwpc_tac_sum_window[i];
+	};///< Returns the limits for the MWPC TAC sum windows, even entries for lower limits and odd entries for upper limits
+
 	// Gamma-energy cut
 	inline double GetGammaEnergyCut( unsigned char i ){
 		// i = 0 for lower limit and i = 1 for upper limit
@@ -517,6 +523,9 @@ public:
 		if( i < nrecoilcuts ) return recoil_cut.at(i);
 		else return nullptr;
 	};///< Getter for particular recoil cuts
+	inline float GetRecoilEnergyCut(unsigned int i){
+		return recoil_energy_cut[i]; 
+	};///< Getter for the recoil energy cut ( 0 - the segment index, 1 the lower limit in keV, 2 the upper limit in keV )
 
 	// Get fission fragment cuts
 	inline std::shared_ptr<TCutG> GetFissionCutHeavy(){
@@ -684,6 +693,9 @@ private:
 									///< 0: is the normal recoil detector (QQQ1 or S14) with data in recoil_evt
 									///< 1: is the CD detector from the fission setup (S1) with data in cd_evt
 
+	// MWPC TAC gates
+	double mwpc_tac_sum_window[4];		///< TAC gate for MWPC hits
+
 	// Cuts
 	unsigned int nrecoilcuts;						///< The number of recoil cuts
 	unsigned int nevszcuts;							///< The number of E vs z cuts
@@ -695,7 +707,9 @@ private:
 	std::string fissioncutHname, fissioncutLname;
 	//TFile *recoil_file;							///< Pointer for opening the recoil cut files (??? could this be a local variable)
 	//TFile *e_vs_z_file;							///< Pointer for the E vs z cut file names (??? could this be a local variable)
+	bool recoil_cut_graphical;						///< Method for applying recoil cuts, true for graphical cuts and false for a single segment energy cut on the Bragg chamber
 	std::vector<std::shared_ptr<TCutG>> recoil_cut;	///< Vector containing the recoil cuts
+	double recoil_energy_cut[3];					///< Energy cut on a single segment of the Bragg chamber
 	std::vector<std::shared_ptr<TCutG>> e_vs_z_cut;	///< Vector containing the E vs z cuts
 	std::shared_ptr<TCutG> fission_cutH;			///< Heavy fission fragment cut
 	std::shared_ptr<TCutG> fission_cutL;			///< Light fission fragment cut

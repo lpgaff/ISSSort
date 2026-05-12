@@ -106,6 +106,7 @@ void ISSEvts::AddEvt( std::shared_ptr<ISSMwpcEvt> event ) {
 	// Make a copy of the event and push it back
 	ISSMwpcEvt fill_evt;
 	fill_evt.SetEvent( event->GetTacDiff(),
+					  event->GetTacSum(),
 					  event->GetPosition(),
 					  event->GetAxis(),
 					  event->GetTime() );
@@ -545,10 +546,11 @@ ISSRecoilEvt::~ISSRecoilEvt(){}
 ISSMwpcEvt::ISSMwpcEvt(){}
 ISSMwpcEvt::~ISSMwpcEvt(){}
 
-void ISSMwpcEvt::SetEvent( int mytacdiff, float mypos,
+void ISSMwpcEvt::SetEvent( int mytacdiff, int mytacsum, float mypos,
 						  unsigned char myaxis, double mytime ) {
 
 	tacdiff = mytacdiff;
+	tacsum = mytacsum;
 	pos = mypos;
 	axis = myaxis;
 	time = mytime;

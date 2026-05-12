@@ -328,10 +328,16 @@ public:
 
 	// Recoil energy gate
 	inline bool RecoilCut( std::shared_ptr<ISSRecoilEvt> r ){
-		std::shared_ptr<TCutG> mycut = react->GetRecoilCut( r->GetSector() );
-		if( mycut.get() == nullptr ) return false;
-		return mycut->IsInside( r->GetEnergyRest( set->GetRecoilEnergyRestStart(), set->GetRecoilEnergyRestStop() ),
-							    r->GetEnergyLoss( set->GetRecoilEnergyLossStart(), set->GetRecoilEnergyLossStop() ) );
+		if( react->CheckIfGraphicalRecoilCut() ){
+			std::shared_ptr<TCutG> mycut = react->GetRecoilCut( r->GetSector() );
+			if( mycut.get() == nullptr ) return false;
+			return mycut->IsInside( r->GetEnergyRest( set->GetRecoilEnergyRestStart(), set->GetRecoilEnergyRestStop() ),
+									r->GetEnergyLoss( set->GetRecoilEnergyLossStart(), set->GetRecoilEnergyLossStop() ) );
+		}
+		else {
+			return r->GetEnergy(react->GetRecoilEnergyCut(0)) > react->GetRecoilEnergyCut(1) &&
+				   r->GetEnergy(react->GetRecoilEnergyCut(0)) < react->GetRecoilEnergyCut(2);
+		}
 	};
 	inline bool RecoilCut( std::shared_ptr<ISSCDEvt> r ){
 		std::shared_ptr<TCutG> mycut = react->GetRecoilCut(0);
@@ -382,7 +388,10 @@ public:
 		if( mycut.get() == nullptr ) return false;
 		else return FissionCut( f, mycut );
 	};
-
+	inline bool MwpcTacSumCut( std::shared_ptr<ISSMwpcEvt> m ){
+		return ( m->GetTacSum() > react->GetMwpcTacSumWindow( 2 * m->GetAxis() ) &&
+				m->GetTacSum() < react->GetMwpcTacSumWindow( 2 * m->GetAxis() + 1 ) );
+	};
 
 private:
 
@@ -458,11 +467,15 @@ private:
 	TH2F *mult_array_fission, *mult_array_recoil, *mult_array_gamma;
 	TH2F *mult_gamma_fission, *mult_gamma_recoil;
 
+	//MWPCs
+	TH2F *mwpc_pos_cal_gated_map;
+
 	// Recoils
 	std::vector<TH2F*> recoil_EdE;
 	std::vector<TH2F*> recoil_EdE_cut;
 	std::vector<TH2F*> recoil_EdE_array;
 	std::vector<TH2F*> recoil_bragg;
+	std::vector<TH2F*> recoil_bragg_gated;
 	std::vector<TH2F*> recoil_dE_vs_T1;
 	std::vector<TH1F*> recoil_dE_eloss;
 	std::vector<TH1F*> recoil_E_eloss;
